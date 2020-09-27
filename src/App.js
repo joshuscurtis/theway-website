@@ -1,13 +1,17 @@
 import React from "react";
 
 import "./styles.css";
-import Panel from "./Panel";
-import Pane from "./Pane";
+import Main from "./Main";
+import About from "./About";
+import Events from "./Events"
+
+
 export default function App() {
   return (
     <div className="App">
-      <Panel />
-      <Pane />
+      <Main />
+      <About />
+      <Events/>
     </div>
   );
 }
