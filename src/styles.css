@@ -37,6 +37,9 @@
 .Pane__Main {
   background-color: black;
   min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Pane__Box {
