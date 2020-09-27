@@ -8,7 +8,6 @@ export default function App() {
     <div className="App">
       <Panel />
       <Pane />
-      <Pane />
     </div>
   );
 }
