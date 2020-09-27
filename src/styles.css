@@ -60,4 +60,12 @@
 
 .About__Card {
   margin-top: 10px;
+  margin: 10px;
+  height: 75vh;
+  min-height: 75vh;
+  max-height: 70vh;
+}
+
+.Card__Actions {
+margin:10px;
 }
