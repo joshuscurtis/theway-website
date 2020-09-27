@@ -38,3 +38,17 @@
   background-color: black;
   min-height: 300px;
 }
+
+.Pane__Box {
+  font-family: sans-serif;
+  position: absolute;
+  margin-top: 20vh;
+  left: 50;
+  width: 50vw;
+  background: rgb(0, 0, 0, 0.3);
+  border-radius: 9px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 10px;
+}
