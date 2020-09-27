@@ -10,6 +10,15 @@ export default function Pane() {
         <div className="About__Card">
           <Card title="About Us" text={content} />
         </div>
+        <div className="About__Card">
+          <Card title="About Us" text={content} />
+        </div>
+        <div className="About__Card">
+          <Card title="About Us" text={content} />
+        </div>
+        <div className="About__Card">
+          <Card title="About Us" text={content} />
+		  </div>		
       </div>
     </div>
   );
