@@ -12,6 +12,9 @@ export default function App() {
       <Main />
       <About />
       <Events/>
+      <About/>
+      <About/>
+      <Events/>
     </div>
   );
 }
