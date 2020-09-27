@@ -13,7 +13,6 @@ export default function App() {
       <Events />
       <About />
       <About />
-      <Events />
     </div>
   );
 }
