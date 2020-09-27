@@ -23,13 +23,12 @@
 }
 
 .Panel__Box > Button {
-  margin: 5px;
+  margin: 10px;
   max-width: 150px;
   justify-content: center;
   align-items: center;
 }
 .Panel__Box > h1 {
-  margin-bottom: 20px;
   text-align: center;
   color: white;
 }
@@ -42,7 +41,9 @@
   justify-content: space-evenly;
   align-items: center;
 }
-
+.Menu__Button {
+  margin: 10px;
+}
 .Pane__Box {
   font-family: sans-serif;
   margin: 5vh;
@@ -52,4 +53,3 @@
   flex-flow: column;
   align-items: center;
 }
-
