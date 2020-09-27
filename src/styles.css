@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+}
+.Panel__Main {
+  height: 70vh;
+  background-image: url("https://www.cafeparisienbelfast.com/cmsGallery/imagerow/11432/resized/1600x800/cafe_parisien_banner.jpg");
+  background-position-y: 70vh;
+  display: flex;
+  justify-content: center;
+}
+.Panel__Box {
+  font-family: sans-serif;
+  position: absolute;
+  margin-top: 20vh;
+  left: 50;
+  width: 50vw;
+  background: rgb(0, 0, 0, 0.3);
+  border-radius: 9px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.Panel__Box > Button {
+  margin: 5px;
+  max-width: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.Panel__Box > h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.Pane__Main {
+  background-color: black;
+  min-height: 300px;
+}
