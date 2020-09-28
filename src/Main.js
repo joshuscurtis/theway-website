@@ -22,7 +22,7 @@ export default function Panel() {
           >
             Our Menu
           </Button>
-          <Button size="large" variant="contained" href="#events">
+          <Button size="large" variant="contained">
             <Link
               activeClass="active"
               to="events"
@@ -33,7 +33,7 @@ export default function Panel() {
               Our Events
             </Link>{" "}
           </Button>
-          <Button size="large" variant="contained" href="#events">
+          <Button size="large" variant="contained">
             <Link
               activeClass="active"
               to="about"
