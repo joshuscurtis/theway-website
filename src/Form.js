@@ -1,35 +1,47 @@
-import React from "react";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-
-export default function BasicTextFields() {
+import React, { useState } from "react";
+import "./styles.css";
+function Form() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  
   return (
-    <form
-      id="myform"
-      action="/text"
-      method="POST"
-      onSubmit={(e) => {
-        e.preventDefault();
-        alert("Submitted form!");
-      }}
-    >
-      <TextField name="email" hintText="Email"/>
-      <TextField name="firstname" type="text"/>
-      <div
-        style={{
-          textAlign: "right",
-          padding: 8,
-          margin: "24px -24px -24px -24px"
-        }}
-      >
-        <Button
-          label="Submit"
-          type="submit" //set the buttom type is submit
-          form="myform" //target the form which you want to sent
-        >
-          Submit
-        </Button>
-      </div>
+    <form>
+      <input
+        value={firstName}
+        onChange={e => setFirstName(e.target.value)}
+        placeholder="First name"
+        type="text"
+        name="firstName"
+        required
+      />
+      <input
+        value={lastName}
+        onChange={e => setLastName(e.target.value)}
+        placeholder="Last name"
+        type="text"
+        name="lastName"
+        required
+      />
+      <input
+        value={email}
+        onChange={e => setEmail(e.target.value)}
+        placeholder="Email address"
+        type="text"
+        name="email"
+        required
+      />
+      <input
+        value={password}
+        onChange={e => setPassword(e.target.value)}
+        placeholder="Password"
+        type="password"
+        name="password"
+        required
+      />
+      <button onClick="alert(firstName);" type="submit">Submit</button>
     </form>
   );
 }
+export default Form;
