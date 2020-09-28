@@ -37,7 +37,7 @@ function Form() {
         required
       />
       <TextField
-      className="Input"
+        className="Input"
         variant="outlined"
         label="Last Name"
         value={lastName}
@@ -54,7 +54,7 @@ function Form() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Email address"
-        type="text"
+        type="email"
         name="email"
         required
       />
