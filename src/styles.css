@@ -4,7 +4,7 @@
 }
 .Panel__Main {
   height: 100vh;
-  background: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?width=1368");
+  background: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?width=2160");
   display: flex;
   justify-content: center;
 }
@@ -14,7 +14,6 @@
   margin-top: 20vh;
   left: 50;
   width: 50vw;
-  background: rgb(0, 0, 0, 0.3);
   border-radius: 9px;
   display: flex;
   flex-flow: column;
@@ -35,7 +34,8 @@
 }
 
 .Pane__Main {
-  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
@@ -64,8 +64,4 @@
   height: 75vh;
   min-height: 75vh;
   max-height: 70vh;
-}
-
-.Card__Actions {
-margin:10px;
 }

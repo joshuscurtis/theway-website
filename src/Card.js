@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./Card.css";
 
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
@@ -12,7 +12,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 345
   },
   media: {
     height: 140
@@ -27,14 +27,10 @@ export default function MediaCard(props) {
     img = props.img;
   }
   return (
-    <Card className={classes.root}>
+    <Card className="Card">
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={img}
-          title={props.title}
-        />
-        <CardContent>
+        <CardMedia className={classes.media} image={img} title={props.title} />
+        <CardContent className="Card__Content">
           <Typography gutterBottom variant="h5" component="h2">
             {props.title}
           </Typography>
