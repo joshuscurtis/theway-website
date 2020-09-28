@@ -6,7 +6,7 @@ import "./styles.css";
 
 export default function Panel() {
   return (
-    <div className="Panel__Main">
+    <div className="Pane__Main">
       <div className="Pane__Box">
         <h1>Sign up to keep in contact with the latest updates from us.</h1>
         <Form/>
