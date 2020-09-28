@@ -2,15 +2,13 @@
   margin: 0;
   font-family: sans-serif;
 }
-html {
-}
+
 
 .divider {
   background-color: white;
 }
 
-.App {
-}
+
 .Panel__Main {
   height: 100vh;
   min-height: 600px;
@@ -25,7 +23,7 @@ html {
   display: flex;
   font-family: sans-serif;
   position: absolute;
-  margin-top: 8vh;
+  margin-top: 5vh;
   left: 50;
   width: auto;
   flex-flow: column;

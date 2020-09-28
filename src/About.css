@@ -13,5 +13,12 @@
 .About__row2 {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 98vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .About__row2 {
+    flex-direction: column;
+    width: auto;
+  }
 }
