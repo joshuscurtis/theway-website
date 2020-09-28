@@ -11,6 +11,7 @@ export default function Panel() {
         ></img>
         <div className="Main__Buttons">
           <Button
+            size="large"
             className="Menu__Button"
             variant="contained"
             href="https://menu.theway.coffee"
@@ -18,8 +19,9 @@ export default function Panel() {
             Our Menu
           </Button>
           <Button
+            size="large"
             variant="contained"
-            href="https://ccd.churchsuite.co.uk/embed/calendar"
+            href="#events"
           >
             Our Events
           </Button>
