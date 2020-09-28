@@ -1,46 +1,73 @@
 import React, { useState } from "react";
-import "./styles.css";
+import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
+import "./Form.css";
 function Form() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  
+
+  function submit(e) {
+    e.preventDefault();
+    //DO STUFF
+    const obj = {};
+    obj.fname = firstName;
+    obj.lname = lastName;
+    obj.email = email;
+
+    console.log(obj);
+    alert(JSON.stringify(obj));
+    //CLEAR FORM
+    setEmail("");
+    setFirstName("");
+    setLastName("");
+  }
+
   return (
-    <form>
-      <input
+    <form className="Contact">
+      <TextField
+        variant="outlined"
+        label="First Name"
+        className="Input"
         value={firstName}
-        onChange={e => setFirstName(e.target.value)}
+        onChange={(e) => setFirstName(e.target.value)}
         placeholder="First name"
         type="text"
         name="firstName"
         required
       />
-      <input
+      <TextField
+      className="Input"
+        variant="outlined"
+        label="Last Name"
         value={lastName}
-        onChange={e => setLastName(e.target.value)}
+        onChange={(e) => setLastName(e.target.value)}
         placeholder="Last name"
         type="text"
         name="lastName"
         required
       />
-      <input
+      <TextField
+        className="Input"
+        variant="outlined"
+        label="Email"
         value={email}
-        onChange={e => setEmail(e.target.value)}
+        onChange={(e) => setEmail(e.target.value)}
         placeholder="Email address"
         type="text"
         name="email"
         required
       />
-      <input
-        value={password}
-        onChange={e => setPassword(e.target.value)}
-        placeholder="Password"
-        type="password"
-        name="password"
-        required
-      />
-      <button onClick="alert(firstName);" type="submit">Submit</button>
+      <Button
+        variant="contained"
+        className="Submit"
+        onClick={(e) => {
+          submit(e);
+        }}
+        type="submit"
+      >
+        Submit
+      </Button>
     </form>
   );
 }

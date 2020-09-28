@@ -3,11 +3,9 @@
   font-family: sans-serif;
 }
 
-
 .divider {
   background-color: white;
 }
-
 
 .Panel__Main {
   height: 100vh;
@@ -50,10 +48,12 @@
 .Pane__Box {
   font-family: sans-serif;
   margin: 5vh;
-  background: rgb(255, 255, 255, 0.3);
+  background: rgb(255, 255, 255, 1);
   border-radius: 9px;
   flex-flow: row;
   align-items: center;
+  padding: 5px;
+  height: auto;
 }
 
 .About__Heading {
