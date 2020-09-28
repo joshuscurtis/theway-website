@@ -1,4 +1,4 @@
-import "./Card.css";
+import "./PeopleCard.css";
 
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
@@ -29,7 +29,7 @@ export default function MediaCard(props) {
   return (
     <Card className="Card">
       <CardActionArea>
-        <CardMedia className={classes.media} image={img} title={props.title} />
+        <CardMedia className="PeopleCard__Image" image={img} title={props.title} />
         <CardContent className="Card__Content">
           <Typography gutterBottom variant="h5" component="h2">
             {props.title}

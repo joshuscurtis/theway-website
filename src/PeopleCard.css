@@ -1,0 +1,43 @@
+.Card {
+  width: 90vw;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-position: top;
+}
+.PeopleCard__Image {
+  background-position: top;
+  height: 200px;
+}
+.Card__Actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-block-start: auto;
+}
+
+.Card__Content {
+  height: 100%;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  flex: 1 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 500px) {
+  .Card {
+    width: 80vw;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .Card {
+    width: 43vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Card {
+    width: 30vw;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Events.css";
-import Card from "./Card";
+import EventCard from "./EventCard";
 export default function Pane() {
   const foodbank =
     "Dunstable Foodbank is an initiative hosted by a number of churches in our town. We are pleased as a church to serve our community in this venture providing food parcels to those in need. Christ Church Dunstable will be hosting a distribution centre at The Way on Tuesday and Friday afternoons between 2.30 & 4.30pm.";
@@ -14,22 +14,42 @@ export default function Pane() {
   return (
     <div>
       <div className="Events__Main">
-        <Card
+        <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Book-Club.jpg"
           title="Book Club"
           text={bookclub}
         />
-        <Card
+        <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/foodbank.jpg"
           title="Foodbank"
           text={foodbank}
         />
-        <Card
+        <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Game-on-snipnsketch.jpg"
           title="Game On!"
           text={gameon}
         />
-        <Card
+        <EventCard
+          img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Cabin-snipnsketch.jpg"
+          title="Cabinfever!"
+          text={cabinfever}
+        />
+        <EventCard
+          img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Book-Club.jpg"
+          title="Book Club"
+          text={bookclub}
+        />
+        <EventCard
+          img="https://www.christchurchdunstable.org.uk/wp-content/uploads/foodbank.jpg"
+          title="Foodbank"
+          text={foodbank}
+        />
+        <EventCard
+          img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Game-on-snipnsketch.jpg"
+          title="Game On!"
+          text={gameon}
+        />
+        <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Cabin-snipnsketch.jpg"
           title="Cabinfever!"
           text={cabinfever}

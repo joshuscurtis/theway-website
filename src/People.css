@@ -1,5 +1,6 @@
-.Events__Main {
+.People__Main {
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
+  background-color: black;
 }
