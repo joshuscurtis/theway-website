@@ -16,26 +16,27 @@ html {
   justify-content: center;
 }
 .Panel__Box {
-  scroll-snap-align: start;
+  background-color: rgb(126, 101, 81, 0.7);
   display: flex;
   font-family: sans-serif;
   position: absolute;
   margin-top: 20vh;
   left: 50;
-  width: 50vw;
-  border-radius: 9px;
-  display: flex;
+  width: auto;
   flex-flow: column;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   min-height: 25vh;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-.Panel__Box > Button {
+.Main__Buttons {
   margin: 10px;
   max-width: 150px;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  flex-flow: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 .Panel__Box > h1 {
   text-align: center;

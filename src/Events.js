@@ -12,7 +12,6 @@ export default function Pane() {
     "Game On! is for anyone who likes playing board games and meet with friends old and new while enjoying a selection of drinks and snacks from The Way Coffee House.  A selection of games are provided and you are welcome to bring your own.";
 
   return (
-    <div>
       <div className="Events__Main">
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Book-Club.jpg"
@@ -55,6 +54,5 @@ export default function Pane() {
           text={cabinfever}
         />
       </div>
-    </div>
   );
 }
