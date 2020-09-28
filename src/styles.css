@@ -77,13 +77,16 @@ html {
 
 .Main__Buttons > a {
   color: white;
-  background-color: rgb(0, 32, 78);
+  background-color: #00204e;
   margin: 10px;
   padding: 10px;
-  font-weight: 700;
+  font-weight: 550;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3),
+    0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .Main__Buttons > a:hover {
-  color: white;
-  background-color: rgb(44, 101, 181);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5),
+    0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  background-color: #3b386f;
 }
