@@ -1,7 +1,10 @@
 .Contact {
 margin: 20px;
 display: flex;
-flex-direction: column;}
+flex-direction: column;
+justify-content: space-evenly;
+}
+
 .Input {
 margin: 10px;
 }
