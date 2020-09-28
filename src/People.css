@@ -2,5 +2,8 @@
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
-  background-color: black;
+  background-color: rgb(79, 98, 114);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  box-shadow: 20px 20px 10px 30px rgba(79, 98, 114, 10);
 }

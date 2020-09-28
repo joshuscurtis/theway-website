@@ -3,6 +3,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: black;
+  box-shadow: 20px 20px 12px 30px rgba(64, 78, 92, 10);
+  background-color: rgb(64, 78, 92);
 }

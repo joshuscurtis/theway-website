@@ -9,6 +9,7 @@
   justify-content: center;
 }
 .Panel__Box {
+  display: flex;
   font-family: sans-serif;
   position: absolute;
   margin-top: 20vh;
@@ -64,4 +65,12 @@
   height: 75vh;
   min-height: 75vh;
   max-height: 70vh;
+}
+
+.News {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+   color:white;
 }
