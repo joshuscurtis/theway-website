@@ -3,8 +3,12 @@
   font-family: sans-serif;
 }
 html {
-  scroll-snap-type: y proximity;
 }
+
+.divider{
+  background-color: white;
+}
+
 .App {
 }
 .Panel__Main {
@@ -21,7 +25,7 @@ html {
   display: flex;
   font-family: sans-serif;
   position: absolute;
-  margin-top: 20vh;
+  margin-top: 10vh;
   left: 50;
   width: auto;
   flex-flow: column;
@@ -39,7 +43,6 @@ html {
 
 .Pane__Main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
@@ -69,7 +72,7 @@ html {
 
 .Main__Buttons {
   margin: 10px;
-  max-width: 150px;
+  max-width: 180px;
   flex-direction: column;
   flex-flow: center;
   display: flex;

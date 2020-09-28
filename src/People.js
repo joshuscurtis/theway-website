@@ -9,6 +9,7 @@ export default function Pane() {
 
   return (
     <div className="People__Main">
+      <h1>Our People</h1>
       <Card
         img="https://goodcoffeeplace.com/wp-content/uploads/2019/06/Barista-Training.jpg?ezimgfmt=ngcb5/notWebP"
         title="Barista One"

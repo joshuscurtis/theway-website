@@ -1,11 +1,20 @@
 .People__Main {
+  scroll-snap-type: y proximity;
   scroll-snap-align: start;
+
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
-  background-color: rgb(79, 98, 114);
+  background-color: rgb(64, 78, 92);
+  box-shadow: 20px 20px 10px 25px rgba(64, 78, 92, 10);
   padding-top: 5%;
   padding-bottom: 5%;
-  box-shadow: 20px 20px 10px 30px rgba(79, 98, 114, 10);
   scroll-snap-type: y mandatory;
+}
+
+.People__Main > h1 {
+  margin-bottom: 5px;
+  color: white;
+  width: 100%;
+  text-align: center;
 }

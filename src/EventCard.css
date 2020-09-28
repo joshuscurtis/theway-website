@@ -8,7 +8,7 @@
   margin-top: 5vh;
 }
 .Card:hover {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .Card__Actions {
@@ -46,6 +46,6 @@
 @media only screen and (min-width: 1200px) {
   .Card {
     width: 30vw;
-    height: 400px;
+    height: 440px;
   }
 }

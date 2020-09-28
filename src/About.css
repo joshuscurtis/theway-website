@@ -1,6 +1,5 @@
 .About__Main {
-  scroll-snap-type: y mandatory;
-  scroll-snap-align: start;
+  scroll-snap-type: y proximity;
   min-height: 100vh;
   display: flex;
   justify-content: space-evenly;

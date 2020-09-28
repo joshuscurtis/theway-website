@@ -9,7 +9,7 @@ export default function Pane() {
   const openingTimes = "08:30am to 3pm Mon-Sat";
   const news = "Now servering Pancakes! "
     return (
-      <div className="About__Main">
+      <div id="about" className="About__Main">
         <Box title="About Us" content={aboutUs} />
         <div className="About__row2">
           <Box title="Opening Times" content={openingTimes} />
