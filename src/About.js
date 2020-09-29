@@ -32,8 +32,10 @@ export default function Pane() {
           />
         </div>
         <div className="About__row2">
-                    <Insta title=""  />
-
+          <News title="Latest Updates" content={news} />
+        </div>
+        <div className="About__row2">
+          <Insta title="" />
         </div>
       </div>
     </div>
