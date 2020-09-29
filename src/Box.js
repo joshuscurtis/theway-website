@@ -4,7 +4,9 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+
 import Feed from "react-instagram-authless-feed";
+import { SocialIcon } from "react-social-icons";
 
 import "./Box.css";
 
@@ -47,7 +49,11 @@ export function News(props) {
           {props.content}
         </Typography>
       </CardContent>
-      <CardActions></CardActions>
+      <CardActions className="social">
+        <SocialIcon url="https://www.instagram.com/the_way_dunstable/" />
+        <SocialIcon url="https://www.facebook.com/thewaydunstable/" />
+        <SocialIcon url="http://youtube.com/" />
+      </CardActions>
     </Card>
   );
 }
