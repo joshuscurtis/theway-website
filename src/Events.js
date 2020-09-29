@@ -3,7 +3,7 @@ import "./Events.css";
 import EventCard from "./EventCard";
 export default function Pane() {
   const foodbank =
-    "Dunstable Foodbank is an initiative hosted by a number of churches in our town. We are pleased as a church to serve our community in this venture providing food parcels to those in need. Christ Church Dunstable will be hosting a distribution centre at The Way on Tuesday and Friday afternoons between 2.30 & 4.30pm.";
+    "Dunstable Foodbank is an initiative hosted by a number of churches in our town. We are pleased as a church to serve our community in this venture providing food parcels to those in need. Christ Church Dunstable will be hosting a distribution centre at The Way.";
   const bookclub =
     "Book Club takes place on the second Wednesday evening of every month at 7.45pm.";
   const cabinfever =
@@ -21,41 +21,56 @@ export default function Pane() {
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Book-Club.jpg"
           title="Book Club"
           text={bookclub}
+          time="Last Wednesday each month"
+
         />
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/foodbank.jpg"
           title="Foodbank"
           text={foodbank}
+          time="Tuesday and Friday afternoons between 14:30 - 16:30"
+
         />
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Game-on-snipnsketch.jpg"
           title="Game On!"
           text={gameon}
+          time="Check our Facebook or Instagram Accounts for details on the next event"
+
         />
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Cabin-snipnsketch.jpg"
           title="Cabinfever!"
           text={cabinfever}
+          time="Check our Facebook or Instagram Accounts for details on the next event"
         />
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Book-Club.jpg"
           title="Book Club"
           text={bookclub}
+          time="Last Wednesday each month"
+
         />
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/foodbank.jpg"
           title="Foodbank"
           text={foodbank}
+          time="Tuesday and Friday afternoons between 14:30 - 16:30"
+
         />
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Game-on-snipnsketch.jpg"
           title="Game On!"
           text={gameon}
+          time="Check our Facebook or Instagram Accounts for details on the next event"
+
         />
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Cabin-snipnsketch.jpg"
           title="Cabinfever!"
           text={cabinfever}
+          time="Check our Facebook or Instagram Accounts for details on the next event"
+
         />
       </div>
     </div>

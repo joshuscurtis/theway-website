@@ -33,6 +33,11 @@ export function News(props) {
         <Typography variant="body2" component="p">
           {props.content}
         </Typography>
+        <iframe
+          className="Insta"
+          title="insta"
+          src="https://snapwidget.com/embed/875815"
+        ></iframe>
       </CardContent>
       <CardActions></CardActions>
     </Card>

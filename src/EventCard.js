@@ -9,7 +9,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-
 export default function MediaCard(props) {
   var img =
     "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?width=1368";
@@ -24,15 +23,15 @@ export default function MediaCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             {props.title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textPrimary" component="p">
             {props.text}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions className="Card__Actions">
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+        <Typography variant="body2" color="textPrimary" component="p">
+          {props.time}
+        </Typography>
       </CardActions>
     </Card>
   );

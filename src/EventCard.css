@@ -16,8 +16,11 @@
 
 .Card__Actions {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin-block-start: auto;
+  text-align: center;
+  background-color: rgb(244, 243, 245);
+  font-style: italic;
 }
 
 .Card__Image {
