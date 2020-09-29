@@ -36,7 +36,7 @@ export default function Panel() {
           <Button size="large" variant="contained">
             <Link
               activeClass="active"
-              to="about"
+              to="openingtimes"
               spy={true}
               smooth={true}
               duration={1000}

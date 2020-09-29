@@ -1,6 +1,7 @@
 .Box__Container {
   margin: 5px;
   width: 87vw;
+  max-width:900px;
   display: flex;
   background-color: rgb(244, 243, 245);
   color: #000000;

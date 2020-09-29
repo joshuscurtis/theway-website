@@ -6,7 +6,6 @@ import About from "./About";
 import Events from "./Events";
 import People from "./People";
 
-import Divider from "@material-ui/core/Divider";
 
 import Footer from "./Footer";
 

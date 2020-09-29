@@ -54,7 +54,7 @@ export function News(props) {
 
 export function OpeningTimes(props) {
   return (
-    <Card className="Box__Container" variant="outlined">
+    <Card id="openingtimes" className="Box__Container" variant="outlined">
       <CardContent className="OpeningTimes">
         <Typography className="Box__Title" variant="h5" component="h2">
           {props.title}
