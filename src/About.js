@@ -18,8 +18,9 @@ export default function Pane() {
           className="About__img"
           src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
         />
-        <Box title="" content={aboutUs} />
         <div className="About__row2">
+        <Box title="" content={aboutUs} />
+
           <OpeningTimes
             title="Opening Times"
             mon="08:30 - 15:00"
