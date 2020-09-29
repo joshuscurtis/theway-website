@@ -8,13 +8,16 @@
     "@material-ui/core": "4.11.0",
     "@material-ui/icons": "4.9.1",
     "@material-ui/styles": "4.10.0",
+    "instapro": "4.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-instagram-authless-feed": "https://github.com/jamesmoriarty/react-instagram-authless-feed",
     "react-jss": "10.4.0",
     "react-material-ui-form-validator": "2.1.1",
     "react-scripts": "3.4.3",
     "react-scroll": "1.8.1",
-    "react-snap-scroll": "0.0.5"
+    "react-snap-scroll": "0.0.5",
+    "user-instagram": "2.1.3"
   },
   "devDependencies": {
     "typescript": "3.8.3"

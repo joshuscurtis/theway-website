@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+import Feed from "react-instagram-authless-feed";
 
 import "./Box.css";
 
@@ -33,11 +34,13 @@ export function News(props) {
         <Typography variant="body2" component="p">
           {props.content}
         </Typography>
-        <iframe
-          className="Insta"
-          title="insta"
-          src="https://snapwidget.com/embed/875815"
-        ></iframe>
+        <div className="Insta__Box">
+          <Feed
+            userName="the_way_dunstable"
+            className="Insta"
+            classNameLoading="Loading"
+          />
+        </div>
       </CardContent>
       <CardActions></CardActions>
     </Card>
