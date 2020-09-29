@@ -1,11 +1,14 @@
 .Card {
   width: 90vw;
-  margin: 15px;
+  margin-bottom: 5vh;
   display: flex;
   flex-direction: column;
   height: 100%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
-  margin-top: 5vh;
+  border-color: #00204e;
+  border: 0px solid #00204e;
+  background-color: rgb(244, 243, 245);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .Card:hover {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -32,14 +35,21 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.Card__Content > h2 {
+  color: #00204e;
+  font-weight: 500;
+  display: none;
+}
+
 @media only screen and (min-width: 500px) {
   .Card {
     width: 80vw;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
   .Card {
-    width: 43vw;
+    width: 40vw;
     height: 420px;
   }
 }

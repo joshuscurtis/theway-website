@@ -8,7 +8,7 @@
 }
 
 .Panel__Main {
-height: 100vh;
+  height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-snap-align: start;
   background: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?width=2160");
@@ -48,6 +48,7 @@ height: 100vh;
 .Pane__Box {
   font-family: sans-serif;
   margin: 5vh;
+  margin-top: 10vh;
   background: rgb(255, 255, 255, 1);
   border-radius: 9px;
   flex-flow: row;
@@ -70,7 +71,7 @@ height: 100vh;
 
 .Main__Buttons {
   margin: 10px;
-  max-width: 180px;
+  max-width: 200px;
   flex-direction: column;
   flex-flow: center;
   display: flex;
@@ -79,11 +80,13 @@ height: 100vh;
 
 .Main__Buttons > button,
 .Main__Buttons > a {
-  color: white;
-  background-color: #00204e;
+  color: #00204e;
+  border-color: #00204e;
+  border: 5px solid #00204e;
+
   margin: 10px;
   padding: 10px;
-  font-weight: 550;
+  font-weight: 850;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3),
     0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
@@ -92,5 +95,6 @@ height: 100vh;
 .Main__Buttons > a:hover {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5),
     0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  background-color: #3b386f;
+  background-color: #00204e;
+  color: white;
 }

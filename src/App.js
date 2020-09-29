@@ -14,11 +14,8 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <About />
-      <Divider className="divider" variant="middle" />
-      
+      <About />      
       <Events />
-      <Divider className="divider" variant="middle" />
       <People />
       <Footer />
     </div>

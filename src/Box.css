@@ -1,16 +1,24 @@
 .Box__Container {
   margin: 10px;
-  width: 75vw;
+  width: 95vw;
   display: flex;
+  background-color: rgb(244, 243, 245);
+  color: #000000;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  border-color: #00204e;
+  border: 5px solid #00204e;
+  text-align: center;
 }
 
 .Box__Title {
   margin-bottom: 10px;
+  color: #00204e;
+  font-weight: 550;
 }
 
 .OpeningTimes {
-  width: 100%;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: justify-content;
@@ -19,7 +27,7 @@
 }
 
 .News {
-  width: 100%;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: justify-content;

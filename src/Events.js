@@ -12,10 +12,11 @@ export default function Pane() {
     "Game On! is for anyone who likes playing board games and meet with friends old and new while enjoying a selection of drinks and snacks from The Way Coffee House.  A selection of games are provided and you are welcome to bring your own.";
 
   return (
-    <div id="events">
-
+    <div className="Events__Container" id="events">
+      <div className="Events__Title__Container" id="events">
+        <h1 className="Events__Title">OUR EVENTS</h1>
+      </div>
       <div className="Events__Main">
-        <h1>Events</h1>
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Book-Club.jpg"
           title="Book Club"

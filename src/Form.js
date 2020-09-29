@@ -11,12 +11,27 @@ function Form() {
     e.preventDefault();
     //DO STUFF
     const obj = {};
-    obj.fname = firstName;
-    obj.lname = lastName;
+    obj.first_name = firstName;
+    obj.last_name = lastName;
     obj.email = email;
 
     console.log(obj);
     alert(JSON.stringify(obj));
+
+    fetch(
+      "https://cors-anywhere.herokuapp.com/https://api.churchsuite.co.uk/v1/addressbook/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Account": "demo",
+          "X-Application": "Example",
+          "X-Auth": "1234567890abc"
+        },
+        body: JSON.stringify(obj)
+      }
+    );
+
     //CLEAR FORM
     setEmail("");
     setFirstName("");

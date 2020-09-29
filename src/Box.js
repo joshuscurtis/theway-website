@@ -11,7 +11,7 @@ export function Box(props) {
   return (
     <Card className="Box__Container" variant="outlined">
       <CardContent>
-        <Typography className="Box__Title" variant="h5" component="h2">
+        <Typography className="Box__Title" variant="h4" component="h2">
           {props.title}
         </Typography>
         <Typography variant="body2" component="p">
