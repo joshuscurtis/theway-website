@@ -37,7 +37,9 @@
 }
 
 .Pane__Main {
+  background: url("https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg");
   background-color: black;
+  background-repeat: no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: center;
@@ -53,8 +55,10 @@
   border-radius: 9px;
   flex-flow: row;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
   height: 100%;
+  width: 60vw;
+  max-width: 500px;
 }
 
 .About__Heading {
