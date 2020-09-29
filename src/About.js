@@ -1,7 +1,9 @@
 import React from "react";
 import "./About.css";
-
+import "animate.js";
 import { Box, OpeningTimes, News, Insta } from "./Box";
+
+import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Pane() {
   const aboutUs =
@@ -20,7 +22,7 @@ export default function Pane() {
         />
         <div className="About__row2">
           <Box title="" content={aboutUs} />
-
+          
           <OpeningTimes
             title="Opening Times"
             mon="08:30 - 15:00"
@@ -33,10 +35,14 @@ export default function Pane() {
           />
         </div>
         <div className="About__row2">
-          <News title="Latest Updates" content={news} />
+          <ScrollAnimation animateOnce="true" animateIn="zoomIn">
+            <News title="Latest Updates" content={news} />
+          </ScrollAnimation>
         </div>
         <div className="About__row2">
-          <Insta title="" />
+          <ScrollAnimation animateIn="fadeIn">
+            <Insta title="" />
+          </ScrollAnimation>
         </div>
       </div>
     </div>
