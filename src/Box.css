@@ -1,6 +1,6 @@
 .Box__Container {
   margin: 10px;
-  width: 95vw;
+  width: 87vw;
   display: flex;
   background-color: rgb(244, 243, 245);
   color: #000000;
@@ -18,7 +18,7 @@
 }
 
 .OpeningTimes {
-  width: 90vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: justify-content;
@@ -27,7 +27,7 @@
 }
 
 .News {
-  width: 90vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: justify-content;

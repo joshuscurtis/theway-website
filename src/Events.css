@@ -31,6 +31,8 @@
 }
 
 .Events__Title__Container {
+  margin-top: 3vh;
+
   display:flex;
   width: 100vw;
   align-content: center;
