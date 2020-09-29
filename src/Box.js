@@ -24,6 +24,18 @@ export function Box(props) {
   );
 }
 
+export function Insta(props) {
+  return (
+    <div className="Insta__Container" variant="outlined">
+      <Feed
+        userName="the_way_dunstable"
+        className="Insta"
+        classNameLoading="Loading"
+      />
+    </div>
+  );
+}
+
 export function News(props) {
   return (
     <Card className="Box__Container" variant="outlined">
@@ -34,13 +46,6 @@ export function News(props) {
         <Typography variant="body2" component="p">
           {props.content}
         </Typography>
-        <div className="Insta__Box">
-          <Feed
-            userName="the_way_dunstable"
-            className="Insta"
-            classNameLoading="Loading"
-          />
-        </div>
       </CardContent>
       <CardActions></CardActions>
     </Card>

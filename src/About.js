@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 
-import { Box, OpeningTimes, News } from "./Box";
+import { Box, OpeningTimes, News, Insta } from "./Box";
 
 export default function Pane() {
   const aboutUs =
@@ -30,9 +30,11 @@ export default function Pane() {
             sat="08:30 - 15:00"
             sun="CLOSED"
           />
-          <News title="Latest News" content={news} />
         </div>
-        <div className="About__row2"></div>
+        <div className="About__row2">
+                    <Insta title=""  />
+
+        </div>
       </div>
     </div>
   );
