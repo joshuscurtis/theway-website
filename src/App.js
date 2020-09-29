@@ -8,7 +8,9 @@ import People from "./People";
 
 
 import Footer from "./Footer";
-
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 export default function App() {
   return (
     <div className="App">
