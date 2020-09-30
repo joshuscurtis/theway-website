@@ -15,11 +15,14 @@ export default function Pane() {
         <h1 className="People__Title">ABOUT US</h1>
       </div>
       <div className="About__Main">
-        <img
-          alt="the way"
-          className="About__img"
-          src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
-        />
+        <ScrollAnimation animateOnce={true} duration={0.8} animateIn="fadeIn">
+          <img
+            alt="the way"
+            className="About__img"
+            src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
+          />
+        </ScrollAnimation>
+
         <div className="About__row2">
           <ScrollAnimation
             animateOnce={true}
