@@ -2,16 +2,12 @@ import React from "react";
 
 import Button from "@material-ui/core/Button";
 
-
 import { Link } from "react-scroll";
 
 import "./styles.css";
 export default function Panel() {
-
-
   return (
     <div className="Panel__Main">
-     
       <div className="Panel__Box">
         <img
           alt="test"

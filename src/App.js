@@ -2,6 +2,7 @@ import React from "react";
 
 import FloatingActionButton from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/ArrowUpward";
+import { Link } from "react-scroll";
 
 import "./styles.css";
 import Header from "./Main";
@@ -27,13 +28,17 @@ export default function App() {
     zIndex: 1000
   };
 
-  function toTop() {
-    window.scrollTo(0, 0);
-  }
   return (
-    <div className="App">
-      <FloatingActionButton onClick={toTop} style={style}>
-        <AddIcon />
+    <div className="App" id="top">
+      <FloatingActionButton style={style}>
+        <Link
+          activeClass="active"
+          to="top"
+          spy={true}
+          smooth={true}
+          duration={1000}
+        >          <AddIcon />
+        </Link>
       </FloatingActionButton>
       <Header />
       <About />
