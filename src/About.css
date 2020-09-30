@@ -10,6 +10,7 @@
 }
 
 .About__row2 {
+  margin: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -31,17 +31,17 @@ export default function Panel() {
               duration={1000}
             >
               Our Events
-            </Link>{" "}
+            </Link>
           </Button>
           <Button size="large" variant="contained">
             <Link
               activeClass="active"
-              to="openingtimes"
+              to="about"
               spy={true}
               smooth={true}
               duration={1000}
             >
-              Opening Times
+              About Us
             </Link>{" "}
           </Button>
         </div>

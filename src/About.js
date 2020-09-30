@@ -21,26 +21,42 @@ export default function Pane() {
           src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
         />
         <div className="About__row2">
-          <Box title="" content={aboutUs} />
-          
-          <OpeningTimes
-            title="Opening Times"
-            mon="08:30 - 15:00"
-            tue="08:30 - 15:00"
-            wed="08:30 - 15:00"
-            thu="08:30 - 15:00"
-            fri="08:30 - 15:00"
-            sat="08:30 - 15:00"
-            sun="CLOSED"
-          />
+          <ScrollAnimation
+            animateOnce={true}
+            duration={0.8}
+            animateIn="slideInLeft"
+          >
+            <Box title="" content={aboutUs} />
+          </ScrollAnimation>
+
+          <ScrollAnimation
+            animateOnce={true}
+            duration={0.8}
+            animateIn="slideInRight"
+          >
+            <OpeningTimes
+              title="Opening Times"
+              mon="08:30 - 15:00"
+              tue="08:30 - 15:00"
+              wed="08:30 - 15:00"
+              thu="08:30 - 15:00"
+              fri="08:30 - 15:00"
+              sat="08:30 - 15:00"
+              sun="CLOSED"
+            />
+          </ScrollAnimation>
         </div>
         <div className="About__row2">
-          <ScrollAnimation animateOnce="true" animateIn="zoomIn">
+          <ScrollAnimation
+            animateOnce={true}
+            duration={0.8}
+            animateIn="slideInUp"
+          >
             <News title="Latest Updates" content={news} />
           </ScrollAnimation>
         </div>
         <div className="About__row2">
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation animateOnce={true} animateIn="fadeIn">
             <Insta title="" />
           </ScrollAnimation>
         </div>
