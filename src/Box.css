@@ -47,6 +47,8 @@
   display: flex;
   color: #000000;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Insta__Box__Title {
@@ -85,6 +87,15 @@
 }
 @media only screen and (max-width: 600px) {
   .Box__Container {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Insta > a > img {
+    width: 30vw;
+    height: 30vw;
+  }
+  .Insta {
     width: 90vw;
   }
 }
