@@ -10,17 +10,16 @@
     "@material-ui/icons": "4.9.1",
     "@material-ui/styles": "4.10.0",
     "animate.js": "2.0.2",
+    "crypto-js": "4.0.0",
     "react": "16.13.1",
     "react-animate-on-scroll": "2.1.5",
     "react-dom": "16.13.1",
     "react-instagram-authless-feed": "https://github.com/jamesmoriarty/react-instagram-authless-feed",
-    "react-jss": "10.4.0",
-    "react-material-ui-form-validator": "2.1.1",
     "react-scripts": "3.4.3",
     "react-scroll": "1.8.1",
-    "react-scroll-effects": "1.0.13",
     "react-snap-scroll": "0.0.5",
-    "react-social-icons": "4.1.0"
+    "react-social-icons": "4.1.0",
+    "simple-crypto-js": "3.0.0"
   },
   "devDependencies": {
     "typescript": "3.8.3"

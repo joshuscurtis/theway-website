@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
+
+import CryptoJS from "crypto-js";
+
 import "./Form.css";
 function Form() {
   const [firstName, setFirstName] = useState("");
@@ -10,16 +13,22 @@ function Form() {
   function submit(e) {
     e.preventDefault();
     //DO STUFF
+    const data = {};
     const obj = {};
-    obj.first_name = firstName;
-    obj.last_name = lastName;
-    obj.email = email;
 
-    console.log(obj);
-    alert(JSON.stringify(obj));
+    var key = CryptoJS.enc.Hex.parse(process.env.KEY);
+    var iv = CryptoJS.enc.Hex.parse(process.env.IV);
+
+    data.last_name = CryptoJS.AES.encrypt(lastName, key, { iv: iv }).toString();
+    data.first_name = CryptoJS.AES.encrypt(firstName, key, {
+      iv: iv
+    }).toString();
+    data.email = CryptoJS.AES.encrypt(email, key, { iv: iv }).toString();
+
+    obj.data = data;
 
     fetch(
-      "https://cors-anywhere.herokuapp.com/https://api.churchsuite.co.uk/v1/addressbook/contact",
+      "https://cors-anywhere.herokuapp.com/https://api.apispreadsheets.com/data/1679/",
       {
         method: "POST",
         headers: {
@@ -38,53 +47,52 @@ function Form() {
     setLastName("");
   }
 
-    return (
-      <form className="Contact">
-        <TextField
-          variant="outlined"
-          label="First Name"
-          className="Input"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          placeholder="First name"
-          type="text"
-          name="firstName"
-          required
-        />
-        <TextField
-          className="Input"
-          variant="outlined"
-          label="Last Name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          placeholder="Last name"
-          type="text"
-          name="lastName"
-          required
-        />
-        <TextField
-          className="Input"
-          variant="outlined"
-          label="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email address"
-          type="email"
-          name="email"
-          required
-        />
-        <Button
-          variant="contained"
-          className="Submit"
-          onClick={(e) => {
-            submit(e);
-          }}
-          type="submit"
-        >
-          Submit
-        </Button>
-      </form>
-    );
-  
+  return (
+    <form className="Contact">
+      <TextField
+        variant="outlined"
+        label="First Name"
+        className="Input"
+        value={firstName}
+        onChange={(e) => setFirstName(e.target.value)}
+        placeholder="First name"
+        type="text"
+        name="firstName"
+        required
+      />
+      <TextField
+        className="Input"
+        variant="outlined"
+        label="Last Name"
+        value={lastName}
+        onChange={(e) => setLastName(e.target.value)}
+        placeholder="Last name"
+        type="text"
+        name="lastName"
+        required
+      />
+      <TextField
+        className="Input"
+        variant="outlined"
+        label="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Email address"
+        type="email"
+        name="email"
+        required
+      />
+      <Button
+        variant="contained"
+        className="Submit"
+        onClick={(e) => {
+          submit(e);
+        }}
+        type="submit"
+      >
+        Submit
+      </Button>
+    </form>
+  );
 }
 export default Form;

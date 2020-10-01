@@ -74,10 +74,12 @@
   max-height: 300px;
   margin: 1vh;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.2s;
 }
 
 .Insta > a > img:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.045);
 }
 
 .social {

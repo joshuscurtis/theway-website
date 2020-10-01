@@ -15,7 +15,7 @@ export default function Pane() {
         <h1 className="People__Title">ABOUT US</h1>
       </div>
       <div className="About__Main">
-        <ScrollAnimation animateOnce={true} duration={0.8} animateIn="fadeIn">
+        <ScrollAnimation animateOnce={true} duration={1} animateIn="fadeIn">
           <img
             alt="the way"
             className="About__img"
@@ -26,7 +26,7 @@ export default function Pane() {
         <div className="About__row2">
           <ScrollAnimation
             animateOnce={true}
-            duration={0.8}
+            duration={1}
             animateIn="slideInLeft"
           >
             <Box title="" content={aboutUs} />
@@ -34,7 +34,7 @@ export default function Pane() {
 
           <ScrollAnimation
             animateOnce={true}
-            duration={0.8}
+            duration={1}
             animateIn="slideInRight"
           >
             <OpeningTimes
@@ -52,7 +52,7 @@ export default function Pane() {
         <div className="About__row2">
           <ScrollAnimation
             animateOnce={true}
-            duration={0.8}
+            duration={1}
             animateIn="slideInUp"
           >
             <News title="Latest Updates" content={news} />

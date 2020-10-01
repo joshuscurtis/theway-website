@@ -9,9 +9,10 @@
   border: 0px solid #00204e;
   background-color: rgb(244, 243, 245);
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.1s;
 }
 .Card:hover {
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
 }
 
 .Card__Actions {
