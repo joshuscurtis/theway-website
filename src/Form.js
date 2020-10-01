@@ -16,8 +16,8 @@ function Form() {
     const data = {};
     const obj = {};
 
-    var key = CryptoJS.enc.Hex.parse(process.env.KEY);
-    var iv = CryptoJS.enc.Hex.parse(process.env.IV);
+    var key = CryptoJS.enc.Hex.parse("000102030405060708090a0b0c0d0e0f");
+    var iv = CryptoJS.enc.Hex.parse("101112131415161718191a1b1c1d1e1f");
 
     data.last_name = CryptoJS.AES.encrypt(lastName, key, { iv: iv }).toString();
     data.first_name = CryptoJS.AES.encrypt(firstName, key, {
