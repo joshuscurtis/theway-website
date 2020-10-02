@@ -4,6 +4,7 @@ import "animate.js";
 import { Box, OpeningTimes, News, Insta } from "./Box";
 
 import ScrollAnimation from "react-animate-on-scroll";
+import Carousel from "nuka-carousel";
 
 export default function Pane() {
   const aboutUs =
@@ -16,11 +17,22 @@ export default function Pane() {
       </div>
       <div className="About__Main">
         <ScrollAnimation animateOnce={true} duration={1} animateIn="fadeIn">
-          <img
-            alt="the way"
-            className="About__img"
-            src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
-          />
+          <div className="About__Slide">
+            <Carousel>
+              <img
+                alt=""
+                src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
+              />
+              <img
+                alt=""
+                src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
+              />
+              <img
+                alt=""
+                src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
+              />
+            </Carousel>
+          </div>
         </ScrollAnimation>
 
         <div className="About__row2">

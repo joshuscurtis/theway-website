@@ -50,7 +50,7 @@ export function News(props) {
           {props.content}
         </Typography>
       </CardContent>
-      <CardActions className="social">
+      <CardActions className="Box__Socials">
         <SocialIcon url="https://www.instagram.com/the_way_dunstable/" />
         <SocialIcon url="https://www.facebook.com/thewaydunstable/" />
         <SocialIcon url="http://youtube.com/" />

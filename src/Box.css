@@ -10,14 +10,16 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
   border-color: #00204e;
-  border: 5px solid #00204e;
+  border: 3px solid #00204e;
   text-align: center;
+  border-radius: 5px;
 }
 
 .Box__Title {
   margin-bottom: 10px;
   color: #00204e;
   font-weight: 550;
+  margin-top: 5%;
 }
 
 .OpeningTimes {
@@ -26,9 +28,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 0;
+  text-align: center;
+  padding: 0px;
 }
 
 .News {
@@ -100,4 +101,26 @@
   .Insta {
     width: 90vw;
   }
+}
+
+.Box__Socials {
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+  align-items: center;
+}
+
+.Box__Socials > a {
+  border-radius: 20000px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.Box__Socials > a:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

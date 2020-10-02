@@ -20,6 +20,7 @@
 .About__img {
   max-width: 90vw;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,4 +57,17 @@
   align-content: center;
   justify-content: center;
   text-align: center;
+}
+
+.About__Slide {
+  height: 100%;
+  width: 90vw;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slider-control-centerright {
+  display: none;
+}
+.slider-control-centerleft {
+  display: none;
 }
