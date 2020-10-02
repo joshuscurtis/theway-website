@@ -18,7 +18,7 @@ export default function Pane() {
       <div className="About__Main">
         <ScrollAnimation animateOnce={true} duration={1} animateIn="fadeIn">
           <div className="About__Slide">
-            <Carousel>
+            <Carousel autoplay autoplayInterval={3000}>
               <img
                 alt=""
                 src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
