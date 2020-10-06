@@ -1,0 +1,14 @@
+{
+  "eventsIntro": "INTRO...",
+  "events": [
+    { "title": "TITLE", "desc": "desciption", "time": "NOW", "img": "src" },
+    { "title": "TITLE", "desc": "desciption", "time": "NOW", "img": "src" },
+    { "title": "TITLE", "desc": "desciption", "time": "NOW", "img": "src" }
+  ],
+  "peopleIntro": "INTRO...",
+  "people": [
+    { "title": "TITLE", "desc": "desciption", "time": "NOW", "img": "src" },
+    { "title": "TITLE", "desc": "desciption", "time": "NOW", "img": "src" },
+    { "title": "TITLE", "desc": "desciption", "time": "NOW", "img": "src" }
+  ]
+}

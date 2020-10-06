@@ -9,7 +9,7 @@
   border: 0px solid #00204e;
   background-color: rgb(244, 243, 245);
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: transform 2.5s;
+  transition: transform 1.5s;
 }
 .Card:hover {
   transform: scale(1.02);
@@ -22,6 +22,7 @@
   text-align: center;
   background-color: rgb(244, 243, 245);
   font-style: italic;
+  height: 20px;
 }
 
 .Card__Image {
@@ -54,12 +55,12 @@
 @media only screen and (min-width: 800px) {
   .Card {
     width: 40vw;
-    height: 420px;
+    height: 500px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .Card {
     width: 30vw;
-    height: 440px;
+    height: 480px;
   }
 }
