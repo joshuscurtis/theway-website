@@ -18,7 +18,7 @@ export default function Panel() {
             size="large"
             className="Menu__Button"
             variant="contained"
-            href="https://menu.theway.coffee"
+            href="/menu"
           >
             Our Menu
           </Button>
