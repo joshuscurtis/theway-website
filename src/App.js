@@ -50,12 +50,14 @@ export default function App() {
             <Header />
             <About />
             <Events />
-            <People />
             <Footer />
           </div>
         </Route>
         <Route path="/menu">
           <Draw />
+        </Route>
+        <Route path="/people">
+          <People />
         </Route>
       </Switch>
     </Router>

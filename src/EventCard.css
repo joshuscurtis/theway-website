@@ -25,6 +25,9 @@
   height: 20px;
 }
 
+.Card__Actions > p {
+  font-weight: bold;
+}
 .Card__Image {
   background-position: center;
   height: 200px;
@@ -55,12 +58,12 @@
 @media only screen and (min-width: 800px) {
   .Card {
     width: 40vw;
-    height: 500px;
+    height: 450px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .Card {
     width: 30vw;
-    height: 480px;
+    height: 450px;
   }
 }
