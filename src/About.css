@@ -18,9 +18,13 @@
 }
 .exc {
   text-align: center;
-  padding: 25px;
-  display: inline;
   font-size: 2em;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: rows;
+  align-content: center;
+  margin-top: 10vh;
 }
 
 .About__img {

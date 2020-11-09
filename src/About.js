@@ -82,7 +82,7 @@ export default function Pane() {
                   .typeString(
                     "<strong><span style='color: #00204e;'>top quality</span></strong>"
                   )
-                  .pauseFor(300)
+                  .pauseFor(500)
                   .deleteChars(11)
                   .typeString(
                     "<strong><span style='color: #00204e;'>award winning</span></strong>"
