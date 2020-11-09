@@ -41,6 +41,11 @@
     flex-direction: column;
     width: auto;
   }
+  .exc {
+    text-align: center;
+    font-size: 1.6em;
+    height: 30px;
+  }
 }
 
 .People__Title {
