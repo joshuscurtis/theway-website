@@ -14,6 +14,7 @@
   border-radius: 5px;
   background-color: rgb(238, 238, 238);
   justify-content: space-between;
+  padding: 0px;
 }
 
 .Box__Title {
@@ -34,7 +35,7 @@
 }
 
 .News {
-  padding: 0;
+  padding: 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
