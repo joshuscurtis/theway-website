@@ -1,7 +1,5 @@
 import React from "react";
 
-import Card from "@material-ui/core/Card";
-
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
@@ -13,7 +11,7 @@ import "./Box.css";
 
 export function Box(props) {
   return (
-    <Card className="Box__Container" variant="outlined">
+    <div className="Box__Container">
       <CardContent>
         <Typography className="Box__Title" variant="h4" component="h2">
           {props.title}
@@ -23,7 +21,7 @@ export function Box(props) {
         </Typography>
       </CardContent>
       <CardActions></CardActions>
-    </Card>
+    </div>
   );
 }
 
@@ -41,7 +39,7 @@ export function Insta(props) {
 
 export function News(props) {
   return (
-    <Card className="Box__Container" variant="outlined">
+    <div className="Box__Container">
       <CardContent className="News">
         <Typography className="Box__Title" variant="h5" component="h2">
           {props.title}
@@ -55,13 +53,13 @@ export function News(props) {
         <SocialIcon url="https://www.facebook.com/thewaydunstable/" />
         <SocialIcon url="http://youtube.com/" />
       </CardActions>
-    </Card>
+    </div>
   );
 }
 
 export function OpeningTimes(props) {
   return (
-    <Card id="openingtimes" className="Box__Container" variant="outlined">
+    <div className="Box__Container">
       <CardContent className="OpeningTimes">
         <Typography className="Box__Title" variant="h5" component="h2">
           {props.title}
@@ -96,6 +94,6 @@ export function OpeningTimes(props) {
         </p>
       </CardContent>
       <CardActions></CardActions>
-    </Card>
+    </div>
   );
 }
