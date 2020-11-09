@@ -38,7 +38,7 @@ export function News(props) {
   return (
     <div className="Box__Container">
       <div className="News">
-        <Typography className="Box__Title" variant="h5" component="h2">
+        <Typography className="Box__Title" variant="h5" component="h5">
           {props.title}
         </Typography>
         <Typography className="content" variant="subtitle" component="p">
@@ -58,7 +58,7 @@ export function OpeningTimes(props) {
   return (
     <div className="Box__Container">
       <div className="OpeningTimes">
-        <Typography className="Box__Title" variant="h5" component="h2">
+        <Typography className="Box__Title" variant="h5" component="h5">
           {props.title}
         </Typography>
         <p>
