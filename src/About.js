@@ -5,7 +5,6 @@ import { OpeningTimes, News, Insta } from "./Box";
 import Typewriter from "typewriter-effect";
 
 import ScrollAnimation from "react-animate-on-scroll";
-import Gallery from "react-grid-gallery";
 
 export default function Pane() {
   // const aboutUs =
