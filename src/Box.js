@@ -37,14 +37,14 @@ export function Insta(props) {
 export function News(props) {
   return (
     <div className="Box__Container">
-      <CardContent className="News">
+      <div className="News">
         <Typography className="Box__Title" variant="h5" component="h2">
           {props.title}
         </Typography>
         <Typography className="content" variant="subtitle" component="p">
           {props.content}
         </Typography>
-      </CardContent>
+      </div>
       <div className="Box__Socials">
         <SocialIcon url="https://www.instagram.com/the_way_dunstable/" />
         <SocialIcon url="https://www.facebook.com/thewaydunstable/" />
