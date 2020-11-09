@@ -134,8 +134,18 @@
   margin-top: 15px;
 }
 
-
-
+.back {
+  width: 50px;
+  height: 40px;
+  color: white;
+  background-color: #00204e;
+}
+.Nav_cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: rows;
+}
 .load {
   margin-left: 45%;
   margin-top: 100px;
@@ -208,4 +218,3 @@
     flex-flow: column;
   }
 }
-

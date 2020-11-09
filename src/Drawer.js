@@ -154,20 +154,27 @@ export default function PersistentDrawerLeft() {
             [classes.appBarShift]: open
           })}
         >
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              className={clsx(classes.menuButton, open && classes.hide)}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" noWrap>
-              The Way Coffee House Menu
-            </Typography>
-          </Toolbar>
+          <div className="Nav">
+            <Toolbar>
+              <div className="Nav_cont">
+                <IconButton
+                  color="inherit"
+                  aria-label="open drawer"
+                  onClick={handleDrawerOpen}
+                  edge="start"
+                  className={clsx(classes.menuButton, open && classes.hide)}
+                >
+                  <MenuIcon />
+                </IconButton>
+                <Typography variant="h6" noWrap>
+                  The Way Coffee House Menu
+                </Typography>
+                <button className="back">
+                  <a href="/">Back</a>
+                </button>
+              </div>
+            </Toolbar>
+          </div>
         </AppBar>
         <Drawer
           className={classes.drawer}
