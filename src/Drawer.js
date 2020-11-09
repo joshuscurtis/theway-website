@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 //import ReactDOM from "react-dom";
 //import "./styles.css";
 
@@ -24,8 +25,12 @@ import CakeIcon from "@material-ui/icons/Cake";
 import LocalCafeIcon from "@material-ui/icons/LocalCafe";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import NewReleasesIcon from "@material-ui/icons/NewReleases";
+import InfoIcon from "@material-ui/icons/Info";
 import Menu from "./Menu";
-var jsonData = require("./menu.json");
+
+import axios from "axios";
+
+//const menu = require("./menu.json");
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -91,6 +96,20 @@ export default function PersistentDrawerLeft() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const [type, setType] = React.useState("cakes");
+  const [menuData, setMenuData] = useState("loading");
+
+  useEffect(() => {
+    async function fetchData() {
+      const request = await axios.get(
+        "https://www.christchurchdunstable.org.uk/theway/json/menu.json"
+      );
+      console.log(request.data);
+      setMenuData(request.data.items);
+      return request;
+    }
+    fetchData();
+  }, []);
+
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -102,18 +121,27 @@ export default function PersistentDrawerLeft() {
   const cakesTypeClick = () => {
     setType("cakes");
     handleDrawerClose();
+    window.scrollTo(0, 0);
   };
   const drinksTypeClick = () => {
     setType("drinks");
     handleDrawerClose();
+    window.scrollTo(0, 0);
   };
   const foodTypeClick = () => {
     setType("food");
     handleDrawerClose();
+    window.scrollTo(0, 0);
   };
   const specialsTypeClick = () => {
     setType("specials");
     handleDrawerClose();
+    window.scrollTo(0, 0);
+  };
+
+  const infoClick = () => {
+    handleDrawerClose();
+    alert("Made by Josh :)");
   };
 
   return (
@@ -136,11 +164,9 @@ export default function PersistentDrawerLeft() {
             >
               <MenuIcon />
             </IconButton>
-            <a href="/">
-              <Typography variant="h6" noWrap>
-                The Way Coffee House
-              </Typography>
-            </a>
+            <Typography variant="h6" noWrap>
+              The Way Coffee House Menu
+            </Typography>
           </Toolbar>
         </AppBar>
         <Drawer
@@ -187,6 +213,13 @@ export default function PersistentDrawerLeft() {
               </ListItemIcon>
               <ListItemText primary="Specials" />
             </ListItem>
+            <Divider />
+            <ListItem className="Drawer__info" button onClick={infoClick}>
+              <ListItemIcon>
+                <InfoIcon />
+              </ListItemIcon>
+              <ListItemText primary="Info" />
+            </ListItem>
           </List>
         </Drawer>
         <main
@@ -195,7 +228,7 @@ export default function PersistentDrawerLeft() {
           })}
         ></main>
       </div>
-      <Menu menu={jsonData.items} type={type} />
+      <Menu menu={menuData} type={type} />
     </div>
   );
 }
