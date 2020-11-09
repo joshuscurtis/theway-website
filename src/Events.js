@@ -6,7 +6,7 @@ import { Box } from "./Box";
 
 export default function Pane() {
   const patchwork =
-    "Whether you’re a master tailor, a skilled-seamstress, or you simply wouldn’t know the eye from the point; Patchwork & Quilting has something for every level of skill. Over this period, the group will be focussing on hand-stitching technique which will be accessible people of any experience. Join us in Christ Church Dunstable’s Foyer on the 1st and 3rd Monday of the month between 10am – 12:30pm and learn fresh skills while forging new friends. Click here to find out more.";
+    "Whether you’re a master tailor, a skilled-seamstress, or you simply wouldn’t know the eye from the point; Patchwork & Quilting has something for every level of skill. Over this period, the group will be focusing on hand-stitching technique which will be accessible people of any experience. Join us in Christ Church Dunstable’s Foyer on the 1st and 3rd Monday of the month between 10am – 12:30pm and learn fresh skills while forging new friends. Click here to find out more.";
   const bookclub =
     "From Asimov to Hemmingway, the fictional to the factual, the tear-jerkers to the comedies, Book club enjoys reading old favourites, modern classics, and the yet to be acknowledged! Book Club evenings are filled with lively discussion and the club is a great way to expand your range as the group dips into a wide variety of styles, authors, and genres. The Book Club meets online on the 2nd Wednesday of each month and everyone is welcome. Click here to find out more.";
   const art =
@@ -16,7 +16,7 @@ export default function Pane() {
   const wed =
     "Christ Church Dunstable has children’s activities on a Wednesday evening, so on Wednesday evening we keep the Coffee House open til 9pm. This is us opportunity to run various activities. On these evenings we run quizzes, puddings nights, music nights and more. All are welcome to come in and enjoy the excellent coffee and cakes that we have to offer. These activities are run in-line with current Covid guidance. More information can be found in the Way or by clicking here.";
   const events =
-    "The Way has a thriving, and diverse community of people from many different backgrounds, nationalities, and interests. Through the Way we are able to run various groups and activities. Even though some of these are unable to restart due to the current coronavirus pandemic, we are pleased to be able to run some of the groups; either in person or online. In these groups, we can build relationships, improve our skills, have fun, and learn about the God that loves us. Each of our groups take time to have a thought for the week where we spend a few minutes thinking about deeper things and about God who has revealed himself through Jesus, His Son.";
+    "The Way has a thriving and diverse community of people from many different backgrounds, nationalities, and interests. Through the Way, we are able to run various groups and activities. Even though some of these are unable to restart due to the current coronavirus pandemic, we are pleased to be able to run some of the groups; either in person or online. In these groups, we can build relationships, improve our skills, have fun, and learn about the God that loves us. Each of our groups take time to have a thought for the week where we spend a few minutes thinking about deeper things and about God who has revealed himself through Jesus, His Son";
   return (
     <div className="Events__Container" id="events">
       <div className="Events__header">
