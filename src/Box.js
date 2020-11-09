@@ -13,9 +13,6 @@ export function Box(props) {
   return (
     <div className="Box__Container">
       <CardContent>
-        <Typography className="Box__Title" variant="h4" component="h2">
-          {props.title}
-        </Typography>
         <Typography variant="body2" component="p">
           {props.content}
         </Typography>
@@ -44,15 +41,15 @@ export function News(props) {
         <Typography className="Box__Title" variant="h5" component="h2">
           {props.title}
         </Typography>
-        <Typography variant="body2" component="p">
+        <Typography className="content" variant="subtitle" component="p">
           {props.content}
         </Typography>
       </CardContent>
-      <CardActions className="Box__Socials">
+      <div className="Box__Socials">
         <SocialIcon url="https://www.instagram.com/the_way_dunstable/" />
         <SocialIcon url="https://www.facebook.com/thewaydunstable/" />
         <SocialIcon url="http://youtube.com/" />
-      </CardActions>
+      </div>
     </div>
   );
 }

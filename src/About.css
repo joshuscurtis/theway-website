@@ -12,7 +12,7 @@
   height: 300px;
 }
 .About__row2 {
-  margin: 20px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -21,12 +21,13 @@
 .exc {
   text-align: center;
   font-size: 2em;
-  margin-top: 20px;
-  height: 50px;
+  margin-top: 0px;
+  height: 45px;
   display: flex;
   justify-content: space-between;
   flex-direction: rows;
   align-content: center;
+  margin-bottom: 0px;
 }
 
 .About__img {

@@ -15,7 +15,7 @@ export default function Pane() {
   return (
     <div id="about">
       <div className="People__Title__Container">
-        <h1 className="People__Title">ABOUT US</h1>
+        {/* <h1 className="People__Title">ABOUT US</h1> */}
       </div>
       <div className="About__Main">
         {/* <ScrollAnimation animateOnce={true} duration={1} animateIn="fadeIn">
@@ -51,17 +51,17 @@ export default function Pane() {
                   .typeString(
                     "<strong><span style='color: #00204e;'>award winning</span></strong>"
                   )
-                  .pauseFor(300)
+                  .pauseFor(500)
                   .deleteChars(13)
                   .typeString(
                     "<strong><span style='color: #00204e;'>hand roasted</span></strong>"
                   )
-                  .pauseFor(300)
+                  .pauseFor(500)
                   .deleteChars(12)
                   .typeString(
                     "<strong><span style='color: #00204e;'>Fairtrade</span></strong>"
                   )
-                  .pauseFor(300)
+                  .pauseFor(500)
                   .callFunction(() => {
                     console.log(
                       "<strong><span style='color: #00204e;'>String typed out!"

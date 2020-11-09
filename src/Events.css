@@ -1,7 +1,4 @@
 .Events__Main {
-  scroll-snap-type: y proximity;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
