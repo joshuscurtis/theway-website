@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue";
   max-width: 100%;
 }
 
