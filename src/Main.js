@@ -18,7 +18,7 @@ export default function Panel() {
             size="large"
             className="Menu__Button"
             variant="contained"
-            href="/menu"
+            href="https://dev.12nine.xyz/menu"
           >
             Our Menu
           </Button>
