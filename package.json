@@ -15,6 +15,7 @@
     "react": "16.13.1",
     "react-animate-on-scroll": "2.1.5",
     "react-dom": "16.13.1",
+    "react-grid-gallery": "0.5.5",
     "react-instagram-authless-feed": "https://github.com/jamesmoriarty/react-instagram-authless-feed",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.3",

@@ -5,7 +5,7 @@ import { OpeningTimes, News, Insta } from "./Box";
 import Typewriter from "typewriter-effect";
 
 import ScrollAnimation from "react-animate-on-scroll";
-import Carousel from "nuka-carousel";
+import Gallery from "react-grid-gallery";
 
 export default function Pane() {
   // const aboutUs =
@@ -18,24 +18,24 @@ export default function Pane() {
         <h1 className="People__Title">ABOUT US</h1>
       </div>
       <div className="About__Main">
-        <ScrollAnimation animateOnce={true} duration={1} animateIn="fadeIn">
+        {/* <ScrollAnimation animateOnce={true} duration={1} animateIn="fadeIn">
           <div className="About__Slide">
             <Carousel autoplay autoplayInterval={3000}>
               <img
                 alt=""
-                src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
+                src="http://www.christchurchdunstable.org.uk/theway/images/raw/DSC02119.JPG"
               />
               <img
                 alt=""
-                src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
+                src="http://www.christchurchdunstable.org.uk/theway/images/raw/DSC00689.JPG"
               />
               <img
                 alt=""
-                src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
+                src="http://www.christchurchdunstable.org.uk/theway/images/raw/DSC00420.JPG"
               />
             </Carousel>
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         <div className="About__row2">
           <div className="exc">
             <Typewriter
