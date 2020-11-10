@@ -12,3 +12,6 @@ margin: 10px;
 .Submit {
 margin-top: 10px;
 }
+.error {
+  color:red;
+}
