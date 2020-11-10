@@ -1,0 +1,84 @@
+.menu {
+  background-color: #00204e;
+}
+
+.Menu__Title {
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+}
+
+.Product__Title {
+  height: 100px;
+  color: white;
+  text-align: center;
+}
+.MuiTypography-colorTextSecondary {
+  color: white;
+}
+.Product__Title > div > span {
+  color: white;
+}
+.Product__Image {
+  height: 300px;
+  border-radius: 50%;
+  width: 300px;
+  display: flex;
+}
+.img_c {
+  display: flex;
+  justify-content: center;
+}
+.Product__Content {
+  height: 50px;
+  display: none;
+}
+
+.Product__Allegens {
+  display: flex;
+  justify-content: center;
+  margin-block-start: auto;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  height: 25px;
+}
+.Menu__Items {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.Product__container {
+  min-width: 300px;
+  width: calc(100% - 25px);
+  flex-flow: column;
+}
+.Menu__Container {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.Drawer__info {
+  margin-top: 90vh;
+}
+.Product__container {
+  max-width: 400px;
+}
+@media only screen and (min-width: 600px) {
+  .Product__container {
+    width: 50%;
+    flex-flow: column;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .Product__container {
+    width: 33%;
+    flex-flow: column;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Product__container {
+    width: 25%;
+    flex-flow: column;
+  }
+}

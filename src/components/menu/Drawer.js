@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 //import ReactDOM from "react-dom";
-//import "./styles.css";
 
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -16,7 +15,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-
+import Button from "@material-ui/core/Button";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -145,7 +144,7 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
-    <div>
+    <div className="menu">
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
@@ -169,9 +168,9 @@ export default function PersistentDrawerLeft() {
                 <Typography variant="h6" noWrap>
                   The Way Coffee House Menu
                 </Typography>
-                <button className="back">
-                  <a href="/">Back</a>
-                </button>
+                <Button href="/" variant="contained">
+                  Back
+                </Button>
               </div>
             </Toolbar>
           </div>

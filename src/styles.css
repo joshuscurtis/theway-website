@@ -140,6 +140,7 @@
   color: white;
   background-color: red;
 }
+
 .Nav_cont {
   width: 100%;
   display: flex;
@@ -151,70 +152,4 @@
   margin-top: 100px;
   display: flex;
   justify-content: center;
-}
-
-.Menu__Title {
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.Product__Title {
-  height: 100px;
-}
-
-.Product__Image {
-  height: 250px;
-  padding-top: 56.25%;
-  background-position: bottom;
-}
-.Product__Content {
-  height: 50px;
-  display: none;
-}
-
-.Product__Allegens {
-  display: flex;
-  justify-content: center;
-  margin-block-start: auto;
-  text-align: center;
-  font-style: italic;
-  width: 100%;
-  height: 25px;
-}
-.Menu__Items {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-evenly;
-}
-.Product__container {
-  min-width: 300px;
-  width: calc(100% - 25px);
-  flex-flow: column;
-}
-.Menu__Container {
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-.Drawer__info {
-  margin-top: 90vh;
-}
-
-@media only screen and (min-width: 600px) {
-  .Product__container {
-    width: 50%;
-    flex-flow: column;
-  }
-}
-@media only screen and (min-width: 900px) {
-  .Product__container {
-    width: 33%;
-    flex-flow: column;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .Product__container {
-    width: 25%;
-    flex-flow: column;
-  }
 }

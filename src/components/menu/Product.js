@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
+import "./style.css";
 
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -14,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     margin: 15,
     boxShadow: "0 3px 3px 4px rgba(0, 50, 50, .1)",
+    background: "#00204e",
     "&:hover": { boxShadow: "0 5px 5px 5px rgba(0, 20, 20, .3)" }
   },
   media: {
@@ -38,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 export default function RecipeReviewCard(props) {
   const classes = useStyles();
   var image = props.image;
-  if (props.image === "") {
+  if (props.image === undefined) {
     image =
       "https://www.blog.print-print.co.uk/wp-content/uploads/2017/07/promote-coffee-shop.jpg";
   }
@@ -51,13 +53,16 @@ export default function RecipeReviewCard(props) {
           title={props.name}
           subheader={props.price}
         />
-        <LazyLoad height={200} offset={100}>
-          <CardMedia
-            className="Product__Image"
-            image={image}
-            title={props.name}
-          />
-        </LazyLoad>
+        <div className="img_c">
+          <LazyLoad height={200} offset={100}>
+            <CardMedia
+              className="Product__Image"
+              image={image}
+              title={props.name}
+            />
+            {/* <img alt="" className="Product__Image" src={image}></img> */}
+          </LazyLoad>
+        </div>
         <CardContent className="Product__Content">
           <Typography variant="body2" color="textSecondary" component="p">
             {props.desc}

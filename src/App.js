@@ -13,7 +13,7 @@ import Events from "./Events";
 import People from "./People";
 import Footer from "./Footer";
 
-import Draw from "./Drawer";
+import Draw from "./components/menu/Drawer";
 
 //set to top of page
 window.onbeforeunload = function () {
