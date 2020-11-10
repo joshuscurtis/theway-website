@@ -166,7 +166,7 @@ export default function PersistentDrawerLeft() {
                   <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" noWrap>
-                  The Way Coffee House Menu
+                  The Way - Menu
                 </Typography>
                 <Button href="/" variant="contained">
                   Back
