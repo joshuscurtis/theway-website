@@ -7,6 +7,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export default function MediaCard(props) {
   var img =
@@ -15,23 +16,25 @@ export default function MediaCard(props) {
     img = props.img;
   }
   return (
-    <Card className="Card">
-      <CardActionArea>
-        <CardMedia className="Card__Image" image={img} title={props.title} />
-        <CardContent className="Card__Content">
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.title}
-          </Typography>
+    <ScrollAnimation className="Card_an" animateOnce={true} animateIn="fadeIn">
+      <Card className="Card">
+        <CardActionArea>
+          <CardMedia className="Card__Image" image={img} title={props.title} />
+          <CardContent className="Card__Content">
+            <Typography gutterBottom variant="h5" component="h2">
+              {props.title}
+            </Typography>
+            <Typography variant="body2" color="textPrimary" component="p">
+              {props.text}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions className="Card__Actions">
           <Typography variant="body2" color="textPrimary" component="p">
-            {props.text}
+            {props.time}
           </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions className="Card__Actions">
-        <Typography variant="body2" color="textPrimary" component="p">
-          {props.time}
-        </Typography>
-      </CardActions>
-    </Card>
+        </CardActions>
+      </Card>
+    </ScrollAnimation>
   );
 }

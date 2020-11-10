@@ -3,6 +3,7 @@ import "./Events.css";
 import EventCard from "./EventCard";
 import { Box } from "./Box";
 //const eventData = require('./data/events.json');
+import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Pane() {
   const patchwork =
@@ -19,17 +20,18 @@ export default function Pane() {
     "The Way has a thriving and diverse community of people from many different backgrounds, nationalities, and interests. Through the Way, we are able to run various groups and activities. Even though some of these are unable to restart due to the current coronavirus pandemic, we are pleased to be able to run some of the groups; either in person or online. In these groups, we can build relationships, improve our skills, have fun, and learn about the God that loves us. Each of our groups take time to have a thought for the week where we spend a few minutes thinking about deeper things and about God who has revealed himself through Jesus, His Son";
   return (
     <div className="Events__Container" id="events">
-      <div className="Events__header">
-        <div className="Events__Title__Container" id="events">
-          <div className="title__left"></div>
-          <h1 className="Events__Title">OUR EVENTS</h1>
-          <div className="title__right"></div>
+      <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+        <div className="Events__header">
+          <div className="Events__Title__Container" id="events">
+            <div className="title__left"></div>
+            <h1 className="Events__Title">OUR EVENTS</h1>
+            <div className="title__right"></div>
+          </div>
+          <div className="Events__intro">
+            <Box title="" content={events} />{" "}
+          </div>
         </div>
-        <div className="Events__intro">
-          <Box title="" content={events} />{" "}
-        </div>
-      </div>
-
+      </ScrollAnimation>
       <div className="Events__Main">
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Book-Club.jpg"
