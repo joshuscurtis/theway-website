@@ -26,7 +26,6 @@ function Form() {
     // }).toString();
     // data.email = CryptoJS.AES.encrypt(email, key, { iv: iv }).toString();
 
-
     // obj.data = data;
 
     obj = {};
@@ -35,101 +34,100 @@ function Form() {
     obj.email = email;
     obj.message = message;
 
-
-
-  if (firstName.length > 2 && lastName.length> 2 && email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/
-)){
-    fetch(
-      "https://formspree.io/f/xdopdonp",
-      {
+    if (
+      firstName.length > 2 &&
+      lastName.length > 2 &&
+      email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
+    ) {
+      fetch("https://formspree.io/f/xdopdonp", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(obj)
-      }
-    );
+      });
 
-    //CLEAR FORM
-    setEmail("");
-    setFirstName("");
-    setLastName("");
-    setMessage("");
-        setError("");
-
-  }
-  else {
-    setError("Please fill out the form correctly")
-    console.log("form error")
-  }
+      //CLEAR FORM
+      setEmail("");
+      setFirstName("");
+      setLastName("");
+      setMessage("");
+      setError("");
+    } else {
+      setError("Please fill out the form correctly");
+      console.log("form error");
+    }
   }
 
   return (
     <div>
-    <p className="error"><strong>{error}</strong></p>
-    <div className="Contact">
-    <form className="Contact">
-        <div className="form_row1">
-        <TextField
-          variant="outlined"
-          label="First Name"
-          className="Input1"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          placeholder="First name"
-          type="text"
-          name="firstName"
-          required
-        />
-        <TextField
-          className="Input1"
-          variant="outlined"
-          label="Last Name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          placeholder="Last name"
-          type="text"
-          name="lastName"
-          required
-        />
+      <p className="error">
+        <strong>{error}</strong>
+      </p>
+      <div className="Contact">
+        <form className="Contact">
+          <div className="form_row1">
+            <TextField
+              variant="outlined"
+              label="First Name"
+              className="Input1"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              placeholder="First name"
+              type="text"
+              name="firstName"
+              required
+            />
+            <TextField
+              className="Input1"
+              variant="outlined"
+              label="Last Name"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              placeholder="Last name"
+              type="text"
+              name="lastName"
+              required
+            />
+          </div>
+          <div className="form_row2">
+            <TextField
+              className="Input"
+              variant="outlined"
+              label="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email address"
+              type="email"
+              name="email"
+              required
+            />
+            <TextField
+              className="Input3"
+              variant="outlined"
+              label="Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Message"
+              type="textbox"
+              multiline
+              rowsMax={4}
+              name="message"
+              required
+            />
+            <Button
+              variant="contained"
+              className="Submit"
+              onClick={(e) => {
+                submit(e);
+              }}
+              type="submit"
+            >
+              Submit
+            </Button>
+          </div>
+        </form>
       </div>
-      <TextField
-        className="Input"
-        variant="outlined"
-        label="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email address"
-        type="email"
-        name="email"
-        required
-      />
-      <TextField
-        className="Input3"
-        variant="outlined"
-        label="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Message"
-        type="textbox"
-        multiline
-          rowsMax={4}
-        name="message"
-        required
-      />
-      <Button
-        variant="contained"
-        className="Submit"
-        onClick={(e) => {
-          submit(e);
-        }}
-        type="submit"
-      >
-        Submit
-      </Button>
-
-    </form>
-    </div>  
     </div>
   );
 }
