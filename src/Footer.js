@@ -12,7 +12,7 @@ export default function Panel() {
       <ScrollAnimation animateOnce={true} animateIn="fadeIn">
         <div className="Pane__Main">
           <div className="Pane__Box">
-            <h1>Sign Up</h1>
+            <h1>Contact Us</h1>
             <Form />
           </div>
         </div>

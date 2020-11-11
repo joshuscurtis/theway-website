@@ -67,29 +67,32 @@ function Form() {
   return (
     <div>
     <p className="error"><strong>{error}</strong></p>
+    <div className="Contact">
     <form className="Contact">
-      <TextField
-        variant="outlined"
-        label="First Name"
-        className="Input"
-        value={firstName}
-        onChange={(e) => setFirstName(e.target.value)}
-        placeholder="First name"
-        type="text"
-        name="firstName"
-        required
-      />
-      <TextField
-        className="Input"
-        variant="outlined"
-        label="Last Name"
-        value={lastName}
-        onChange={(e) => setLastName(e.target.value)}
-        placeholder="Last name"
-        type="text"
-        name="lastName"
-        required
-      />
+        <div className="form_row1">
+        <TextField
+          variant="outlined"
+          label="First Name"
+          className="Input1"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          placeholder="First name"
+          type="text"
+          name="firstName"
+          required
+        />
+        <TextField
+          className="Input1"
+          variant="outlined"
+          label="Last Name"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+          placeholder="Last name"
+          type="text"
+          name="lastName"
+          required
+        />
+      </div>
       <TextField
         className="Input"
         variant="outlined"
@@ -102,13 +105,15 @@ function Form() {
         required
       />
       <TextField
-        className="Input"
+        className="Input3"
         variant="outlined"
         label="Message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Message"
-        type="text"
+        type="textbox"
+        multiline
+          rowsMax={4}
         name="message"
         required
       />
@@ -122,8 +127,10 @@ function Form() {
       >
         Submit
       </Button>
+
     </form>
     </div>  
+    </div>
   );
 }
 export default Form;
