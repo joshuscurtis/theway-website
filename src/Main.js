@@ -5,21 +5,15 @@ import Button from "@material-ui/core/Button";
 
 import { Link } from "react-scroll";
 import "./styles.css";
-export default function Panel() {
-  const [background, setBackground] = useState(
-    "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?width=982&height=726"
+export default function Panel() {    "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?width=982&height=726"
   );
-  var back = { backgroundImage: "url(" + background + ")" };
 
   return (
     <div className="Panel__Main">
         <Carousel>
-          <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?width=982&height=726" />
-          <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide2" />
-          <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide3" />
-          <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide4" />
-          <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide5" />
-          <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide6" />
+          <img alt="" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?width=982&height=726" />
+          <img alt="" src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide2" />
+          <img alt="" src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide3" />          <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide5" />
         </Carousel>
       <div className="Panel__Box">
         <img
