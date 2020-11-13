@@ -10,9 +10,10 @@ export default function Panel() {
   return (
     <div className="Panel__Main">
       <Carousel autoplay={true} autoplayInterval={5000} wrapAround={true}>
-        <div className="bg_1">TEST</div>
+        <div className="bg_1"></div>
         <div className="bg_2"></div>
         <div className="bg_3"></div>
+        <div className="bg_4"></div>
       </Carousel>
       <div className="Panel__Box">
         <img
