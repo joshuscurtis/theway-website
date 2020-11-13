@@ -13,6 +13,27 @@
   background-color: white;
 }
 
+.bg_1 {
+  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/cake.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: 50% 50%;
+}
+.bg_2 {
+  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC02084.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: 20% 50%;
+  background-size: 100%;
+}
+.bg_3 {
+  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC02069.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: 100%;
+}
+
 .Panel__Main {
   height: 100vh;
   min-height: 650px;

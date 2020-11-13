@@ -6,15 +6,14 @@ import Button from "@material-ui/core/Button";
 import { Link } from "react-scroll";
 import "./styles.css";
 
-export default function Panel() { 
+export default function Panel() {
   return (
     <div className="Panel__Main">
-        <Carousel>
-          <img alt="" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?width=982&height=726" />
-          <img alt="" src="https://via.placeholder.com/900/ffffff/c0392b/&text=slide2" />
-          <img alt="" src="https://via.placeholder.com/900/ffffff/c0392b/&text=slide3" />       
-          <img alt=""  src="https://via.placeholder.com/900/ffffff/c0392b/&text=slide5" />
-        </Carousel>
+      <Carousel autoplay={true} autoplayInterval={5000} wrapAround={true}>
+        <div className="bg_1">TEST</div>
+        <div className="bg_2"></div>
+        <div className="bg_3"></div>
+      </Carousel>
       <div className="Panel__Box">
         <img
           alt="test"
