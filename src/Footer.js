@@ -17,6 +17,17 @@ export default function Panel() {
           </div>
         </div>
         <div className="Footer">
+          <div className="map">
+            <iframe
+              title="maps"
+              width="100%"
+              height="300px"
+              frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCWoKnIqMOJ1npXjMd3GXbknzUSLWYga0Q
+    &q=The+Way+Coffee+House"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div className="Footer__Socials">
             <SocialIcon url="https://www.instagram.com/the_way_dunstable/" />
             <SocialIcon url="https://www.facebook.com/thewaydunstable/" />
