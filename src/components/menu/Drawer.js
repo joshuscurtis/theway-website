@@ -9,7 +9,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
-import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -41,7 +40,8 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen
-    })
+    }),
+    backgroundColor : "#4f5359"
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -165,9 +165,9 @@ export default function PersistentDrawerLeft() {
                 >
                   <MenuIcon />
                 </IconButton>
-                <Typography variant="h6" noWrap>
+                <div className="App__Title">
                   The Way - Menu
-                </Typography>
+                </div>
                 <Button href="/" variant="contained">
                   Back
                 </Button>

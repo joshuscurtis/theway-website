@@ -1,23 +1,31 @@
+
 .menu {
   background-color: #00204e;
+  font-family: "Architects Daughter";
 }
-
+.App__Title {
+font-size: 2.2em;
+}
 .Menu__Title {
   text-align: center;
   text-transform: capitalize;
   color: white;
+  font-family: "Architects Daughter";
 }
 
 .Product__Title {
+  font-family: "Architects Daughter";
   height: 100px;
   color: white;
   text-align: center;
 }
 .MuiTypography-colorTextSecondary {
   color: white;
+  font-family: "Architects Daughter";
 }
 .Product__Title > div > span {
   color: white;
+font-family: "Architects Daughter"
 }
 .Product__Image {
   height: 300px;
