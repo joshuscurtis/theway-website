@@ -40,6 +40,7 @@ font-size: 1.8em;}
   border-radius: 50%;
   width: 300px;
   display: flex;
+  border: 4px solid white;  
 }
 .img_c {
   display: flex;
@@ -51,6 +52,7 @@ font-size: 1.8em;}
 }
 
 .Product__Allegens {
+  color: white;
   display: flex;
   justify-content: center;
   margin-block-start: auto;
