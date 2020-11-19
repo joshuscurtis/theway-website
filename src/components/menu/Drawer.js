@@ -166,7 +166,6 @@ export default function PersistentDrawerLeft() {
                   <MenuIcon />
                 </IconButton>
                 <div className="App__Title">
-                  The Way - Menu
                 </div>
                 <Button href="/" variant="contained">
                   Back
