@@ -69,14 +69,11 @@ export default function RecipeReviewCard(props) {
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
-          <Typography
+          <div
             className="Product__Allegens"
-            variant="overline"
-            color="textSecondary"
-            component="p"
           >
             {props.allegens}
-          </Typography>
+          </div>
         </CardActions>
       </Card>
     </div>

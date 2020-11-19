@@ -59,7 +59,9 @@ font-size: 1.8em;}
   text-align: center;
   font-style: italic;
   width: 100%;
+  font-size: 0.7em;
   height: 25px;
+  font-weight: 100;
 }
 .Menu__Items {
   display: flex;
