@@ -1,27 +1,38 @@
 
 .menu {
   background-color: #00204e;
-  font-family: 'Sacramento', cursive;}
+  font-family: 'Raleway', sans-serif;
+text-transform: capitalize;
+}
+  
 .App__Title {
 font-size: 2.2em;
 }
-.Menu__Title {
+.Menu__Title  {
   text-align: center;
   text-transform: capitalize;
   color: white;
-  font-family: 'Sacramento', cursive;}
+  font-family: 'Sacramento', cursive;
+font-size: 1.8em;}
 
-.Product__Title > div > span {
-  font-family: 'Sacramento', cursive; 
-  color: white;
+.Product__Title {
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+    color: white;
   text-align: center;
+  
 }
 .MuiTypography-colorTextSecondary {
   color: white;
-  font-family: 'Sacramento', cursive;}
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
 .Product__Title > div > span {
   color: white;
-  font-family: 'Sacramento', cursive;}
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
 .Product__Image {
   height: 300px;
   border-radius: 50%;
