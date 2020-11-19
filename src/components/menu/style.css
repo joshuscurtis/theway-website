@@ -62,6 +62,7 @@ font-size: 1.8em;}
   font-size: 0.7em;
   height: 25px;
   font-weight: 100;
+  letter-spacing:  2px;
 }
 .Menu__Items {
   display: flex;
