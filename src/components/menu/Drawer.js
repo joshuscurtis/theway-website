@@ -55,7 +55,8 @@ const useStyles = makeStyles((theme) => ({
   
 back :{
   color: "white",
-  backgroundColor: "#00204e"
+  backgroundColor: "#00204e",
+  padding :12
 },
   menuButton: {
     marginRight: theme.spacing(2)
@@ -93,6 +94,10 @@ back :{
       duration: theme.transitions.duration.enteringScreen
     }),
     marginLeft: 0
+  },
+  icons:{ 
+    color:"#00204e",
+    fill: "green"
   }
 }));
 
@@ -177,7 +182,7 @@ export default function PersistentDrawerLeft() {
                 </div>
                 
               <Button className={classes.back} href="/" variant="contained">
-                  Back
+                  Back to website
                 </Button>
               </div>
             </Toolbar>
@@ -202,35 +207,35 @@ export default function PersistentDrawerLeft() {
             </IconButton>
           </div>
           <Divider />
-          <List>
+          <List className={classes.icons}>
             <ListItem button onClick={cakesTypeClick}>
               <ListItemIcon>
-                <CakeIcon />
+                <CakeIcon style={{fill: "#00204e"}}/>
               </ListItemIcon>
               <ListItemText primary="Cakes" />
             </ListItem>
             <ListItem button onClick={drinksTypeClick}>
               <ListItemIcon>
-                <LocalCafeIcon />
+                <LocalCafeIcon style={{fill: "#00204e"}}/>
               </ListItemIcon>
               <ListItemText primary="Drinks" />
             </ListItem>
             <ListItem button onClick={foodTypeClick}>
               <ListItemIcon>
-                <FastfoodIcon />
+                <FastfoodIcon style={{fill: "#00204e"}}/>
               </ListItemIcon>
               <ListItemText primary="Food" />
             </ListItem>
             <ListItem button onClick={specialsTypeClick}>
               <ListItemIcon>
-                <NewReleasesIcon />
+                <NewReleasesIcon style={{fill: "#00204e"}} />
               </ListItemIcon>
               <ListItemText primary="Specials" />
             </ListItem>
             <Divider />
             <ListItem className="Drawer__info" button onClick={infoClick}>
               <ListItemIcon>
-                <InfoIcon />
+                <InfoIcon style={{fill: "#00204e"}} />
               </ListItemIcon>
               <ListItemText primary="Info" />
             </ListItem>
