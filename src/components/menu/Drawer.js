@@ -96,8 +96,7 @@ back :{
     marginLeft: 0
   },
   icons:{ 
-    color:"#00204e",
-    fill: "green"
+    color:"black",
   }
 }));
 
