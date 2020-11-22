@@ -182,7 +182,7 @@ export default function PersistentDrawerLeft() {
                 </div>
                 
               <Button className={classes.back} href="/" variant="contained">
-                  Back to website
+                  Back
                 </Button>
               </div>
             </Toolbar>
