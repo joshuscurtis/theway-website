@@ -50,7 +50,11 @@ font-size: 1.8em;}
   height: 50px;
   display: none;
 }
-
+.back{
+  color: #ffffff;
+  background-color: #00204e;
+  margin-top: 5px;
+}
 .Product__Allegens {
   color: white;
   display: flex;

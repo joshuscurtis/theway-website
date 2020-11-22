@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen
     }),
-    backgroundColor : "#ffffff"
+    backgroundColor : "#ffffff",
+    color: "#00204e"
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -51,6 +52,11 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.enteringScreen
     })
   },
+  
+back :{
+  color: "white",
+  backgroundColor: "#00204e"
+},
   menuButton: {
     marginRight: theme.spacing(2)
   },
@@ -150,12 +156,14 @@ export default function PersistentDrawerLeft() {
         <AppBar
           position="fixed"
           className={clsx(classes.appBar, {
+
             [classes.appBarShift]: open
           })}
         >
           <div className="Nav">
             <Toolbar>
               <div className="Nav_cont">
+                
                 <IconButton
                   color="inherit"
                   aria-label="open drawer"
@@ -165,9 +173,10 @@ export default function PersistentDrawerLeft() {
                 >
                   <MenuIcon />
                 </IconButton>
-                <div className="App__Title">
+               <div className="App__Title">
                 </div>
-                <Button href="/" variant="contained">
+                
+              <Button className={classes.back} href="/" variant="contained">
                   Back
                 </Button>
               </div>
