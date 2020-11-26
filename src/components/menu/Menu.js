@@ -11,26 +11,45 @@ export default function ItemBuilder(props) {
     return <CircularProgress className="load" />;
   } else {
     var rows = [];
-    for (var i = 0; i < menu.length; i++) {
-      if (type === menu[i].type && menu[i].forSale === true) {
-        rows.push(
-          <Product
-            key={menu[i].name}
-            name={menu[i].name}
-            price={menu[i].price}
-            desc={menu[i].desc}
-            image={menu[i].image}
-            allegens={menu[i].allegens}
-          />
-        );
-      }
+    if (type === "drinks") {
+      return (
+        <div className="Menu__Container">
+          <div className="Menu__Title">
+            <div className="Menu__Title" variant="h5" component="h5"></div>
+          </div>
+          <div className="Menu__Items">
+            <img
+              alt=""
+              src="https://www.christchurchdunstable.org.uk/theway/images/min/drinks-min.jpg"
+            ></img>
+          </div>
+        </div>
+      );
     }
 
+    if (type === "cakes") {
+      for (var i = 0; i < menu.length; i++) {
+        if (type === menu[i].type && menu[i].forSale === true) {
+          rows.push(
+            <Product
+              key={menu[i].name}
+              name={menu[i].name}
+              price={menu[i].price}
+              desc={menu[i].desc}
+              image={menu[i].image}
+              allegens={menu[i].allegens}
+            />
+          );
+        }
+      }
+    }
     return (
       <div className="Menu__Container">
-        <div className="Menu__Title"><div className="Menu__Title" variant="h5" component="h5">
-          {props.type}
-        </div></div>
+        <div className="Menu__Title">
+          <div className="Menu__Title" variant="h5" component="h5">
+            {props.type}
+          </div>
+        </div>
         <div className="Menu__Items">{rows}</div>
       </div>
     );
