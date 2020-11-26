@@ -15,10 +15,7 @@ export default function Panel() {
         <div className="bg_4"></div>
       </Carousel>
       <div className="Panel__Box">
-        <img
-          alt="test"
-          src="https://www.christchurchdunstable.org.uk/wp-content/uploads/Way-254x300.png"
-        ></img>
+        <img alt="test" src="images/logo.jpg" className="logo"></img>
         <div className="Main__Buttons">
           <Button
             size="large"
@@ -35,8 +32,8 @@ export default function Panel() {
               spy={true}
               smooth={true}
               duration={1000}
-            >             
-             Our Events
+            >
+              Our Events
             </Link>
           </Button>
           <Button size="large" variant="contained">

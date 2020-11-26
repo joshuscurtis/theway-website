@@ -11,7 +11,9 @@
 .divider {
   background-color: white;
 }
-
+.logo {
+  width: 220px;
+}
 .bg_1 {
   background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC01088edited.jpg");
   height: 100vh;
