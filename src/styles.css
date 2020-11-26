@@ -13,7 +13,7 @@
 }
 
 .bg_1 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC02060.jpg");
+  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC01088edited.jpg");
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -21,14 +21,14 @@
   background-size: 100%;
 }
 .bg_2 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC02047.jpg");
+  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC02431.jpg");
   height: 100vh;
   width: 100%;
   background-position: center;
   background-size: 100%;
 }
 .bg_3 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC02069.jpg");
+  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC02060.jpg");
   height: 100vh;
   width: 100%;
   background-position: center;
@@ -51,16 +51,16 @@
 
 @media only screen and (max-width: 500px) {
   .bg_1 {
-    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/cake.jpg");
+    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC01088edited.jpg");
     height: 100vh;
-    width: 100%;
-    background-size: 150%;
+    background-size: 280%;
+    background-position: 50%;
   }
   .bg_2 {
-    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC02060.jpg");
+    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/raw/DSC02431.jpg");
     height: 100vh;
     width: 100%;
-    background-position: 30%;
+    background-position: 50%;
     background-size: 300%;
   }
   .bg_3 {

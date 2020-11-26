@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "nuka-carousel";
-
 import Button from "@material-ui/core/Button";
 
 import { Link } from "react-scroll";
@@ -36,8 +35,8 @@ export default function Panel() {
               spy={true}
               smooth={true}
               duration={1000}
-            >
-              Our Events
+            >             
+             Our Events
             </Link>
           </Button>
           <Button size="large" variant="contained">

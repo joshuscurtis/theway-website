@@ -1,6 +1,7 @@
 import React from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollableSection, { ScrollableLink } from 'react-update-url-on-scroll';
 
 import FloatingActionButton from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/ArrowUpward";
@@ -48,6 +49,7 @@ export default function App() {
               </Link>
             </FloatingActionButton>
             <Header />
+
             <About />
             <Events />
             <Footer />

@@ -24,6 +24,7 @@
     "react-scroll": "1.8.1",
     "react-snap-scroll": "0.0.5",
     "react-social-icons": "4.1.0",
+    "react-update-url-on-scroll": "3.5.0",
     "simple-crypto-js": "3.0.0",
     "typewriter-effect": "2.13.1"
   },
