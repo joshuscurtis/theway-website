@@ -14,6 +14,7 @@ export default function ItemBuilder(props) {
     if (type === "drinks") {
       return (
         <div className="Menu__Container">
+          <div className="Menu__Title"></div>
           <img
             className="menuimage"
             alt=""

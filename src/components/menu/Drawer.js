@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 //import ReactDOM from "react-dom";
+import "./style.css";
 
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -41,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen
     }),
-    backgroundColor : "#ffffff",
+    backgroundColor: "#ffffff",
     color: "#00204e"
   },
   appBarShift: {
@@ -52,12 +53,12 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.enteringScreen
     })
   },
-  
-back :{
-  color: "white",
-  backgroundColor: "#00204e",
-  padding :12
-},
+
+  back: {
+    color: "white",
+    backgroundColor: "#00204e",
+    padding: 12
+  },
   menuButton: {
     marginRight: theme.spacing(2)
   },
@@ -95,8 +96,8 @@ back :{
     }),
     marginLeft: 0
   },
-  icons:{ 
-    color:"black",
+  icons: {
+    color: "black"
   }
 }));
 
@@ -160,14 +161,12 @@ export default function PersistentDrawerLeft() {
         <AppBar
           position="fixed"
           className={clsx(classes.appBar, {
-
             [classes.appBarShift]: open
           })}
         >
           <div className="Nav">
             <Toolbar>
               <div className="Nav_cont">
-                
                 <IconButton
                   color="inherit"
                   aria-label="open drawer"
@@ -177,10 +176,9 @@ export default function PersistentDrawerLeft() {
                 >
                   <MenuIcon />
                 </IconButton>
-               <div className="App__Title">
-                </div>
-                
-              <Button className={classes.back} href="/" variant="contained">
+                <div className="App__Title"></div>
+
+                <Button className={classes.back} href="/" variant="contained">
                   Back
                 </Button>
               </div>
@@ -209,32 +207,32 @@ export default function PersistentDrawerLeft() {
           <List className={classes.icons}>
             <ListItem button onClick={cakesTypeClick}>
               <ListItemIcon>
-                <CakeIcon style={{fill: "#00204e"}}/>
+                <CakeIcon style={{ fill: "#00204e" }} />
               </ListItemIcon>
               <ListItemText primary="Cakes" />
             </ListItem>
             <ListItem button onClick={drinksTypeClick}>
               <ListItemIcon>
-                <LocalCafeIcon style={{fill: "#00204e"}}/>
+                <LocalCafeIcon style={{ fill: "#00204e" }} />
               </ListItemIcon>
               <ListItemText primary="Drinks" />
             </ListItem>
             <ListItem button onClick={foodTypeClick}>
               <ListItemIcon>
-                <FastfoodIcon style={{fill: "#00204e"}}/>
+                <FastfoodIcon style={{ fill: "#00204e" }} />
               </ListItemIcon>
               <ListItemText primary="Food" />
             </ListItem>
             <ListItem button onClick={specialsTypeClick}>
               <ListItemIcon>
-                <NewReleasesIcon style={{fill: "#00204e"}} />
+                <NewReleasesIcon style={{ fill: "#00204e" }} />
               </ListItemIcon>
               <ListItemText primary="Specials" />
             </ListItem>
             <Divider />
             <ListItem className="Drawer__info" button onClick={infoClick}>
               <ListItemIcon>
-                <InfoIcon style={{fill: "#00204e"}} />
+                <InfoIcon style={{ fill: "#00204e" }} />
               </ListItemIcon>
               <ListItemText primary="Info" />
             </ListItem>
