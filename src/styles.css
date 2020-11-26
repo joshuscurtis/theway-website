@@ -20,28 +20,28 @@
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
 }
 .bg_2 {
   background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/snow-outside-min.jpg");
   height: 100vh;
   width: 100%;
   background-position: center;
-  background-size: 100%;
+  background-size: 150%;
 }
 .bg_3 {
   background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/cake-min.jpg");
   height: 100vh;
   width: 100%;
   background-position: center;
-  background-size: 100%;
+  background-size: 150%;
 }
 .bg_4 {
   background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/coffee-min.jpg");
   height: 100vh;
   width: 100%;
   background-position: left;
-  background-size: 100%;
+  background-size: 150%;
 }
 
 @media only screen and (max-width: 900px) {
