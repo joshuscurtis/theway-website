@@ -14,15 +14,11 @@ export default function ItemBuilder(props) {
     if (type === "drinks") {
       return (
         <div className="Menu__Container">
-          <div className="Menu__Title">
-            <div className="Menu__Title" variant="h5" component="h5"></div>
-          </div>
-          <div className="Menu__Items">
-            <img
-              alt=""
-              src="https://www.christchurchdunstable.org.uk/theway/images/min/drinks-min.jpg"
-            ></img>
-          </div>
+          <img
+            className="menuimage"
+            alt=""
+            src="https://www.christchurchdunstable.org.uk/theway/images/min/drinks-min.jpg"
+          ></img>
         </div>
       );
     }
