@@ -1,7 +1,7 @@
 import React from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ScrollableSection, { ScrollableLink } from 'react-update-url-on-scroll';
+//import ScrollableSection, { ScrollableLink } from 'react-update-url-on-scroll';
 
 import FloatingActionButton from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/ArrowUpward";
