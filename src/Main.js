@@ -15,7 +15,7 @@ export default function Panel() {
         <div className="bg_4"></div>
       </Carousel>
       <div className="Panel__Box">
-        <img alt="test" src="images/logo.jpg" className="logo"></img>
+        <img alt="test" src="images/logo-min.jpg" className="logo"></img>
         <div className="Main__Buttons">
           <Button
             size="large"
