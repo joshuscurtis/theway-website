@@ -23,7 +23,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import CakeIcon from "@material-ui/icons/Cake";
 import LocalCafeIcon from "@material-ui/icons/LocalCafe";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
-import NewReleasesIcon from "@material-ui/icons/NewReleases";
+//import NewReleasesIcon from "@material-ui/icons/NewReleases";
 import InfoIcon from "@material-ui/icons/Info";
 import Menu from "./Menu";
 
@@ -143,12 +143,12 @@ export default function PersistentDrawerLeft() {
     handleDrawerClose();
     window.scrollTo(0, 0);
   };
-  const specialsTypeClick = () => {
+  /*const specialsTypeClick = () => {
     setType("specials");
     handleDrawerClose();
     window.scrollTo(0, 0);
   };
-
+*/
   const infoClick = () => {
     handleDrawerClose();
     alert("Made by Josh :)");
@@ -223,12 +223,14 @@ export default function PersistentDrawerLeft() {
               </ListItemIcon>
               <ListItemText primary="Food" />
             </ListItem>
+            {/*
             <ListItem button onClick={specialsTypeClick}>
               <ListItemIcon>
                 <NewReleasesIcon style={{ fill: "#00204e" }} />
               </ListItemIcon>
               <ListItemText primary="Specials" />
             </ListItem>
+           */}
             <Divider />
             <ListItem className="Drawer__info" button onClick={infoClick}>
               <ListItemIcon>

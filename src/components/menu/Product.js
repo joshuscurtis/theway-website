@@ -13,10 +13,10 @@ import { red } from "@material-ui/core/colors";
 import LazyLoad from "react-lazyload";
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: 15,
+    margin: 5,
     boxShadow: "0 3px 3px 4px rgba(0, 50, 50, .1)",
-    background: "#00204e",
-    "&:hover": { boxShadow: "0 5px 5px 5px rgba(0, 20, 20, .3)" }
+    background: "#00204e"
+    //"&:hover": { boxShadow: "0 5px 5px 5px rgba(0, 20, 20, .3)" }
   },
   media: {
     height: 250,
@@ -69,11 +69,7 @@ export default function RecipeReviewCard(props) {
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
-          <div
-            className="Product__Allegens"
-          >
-            {props.allegens}
-          </div>
+          <div className="Product__Allegens">{props.allegens}</div>
         </CardActions>
       </Card>
     </div>

@@ -14,7 +14,6 @@ export default function ItemBuilder(props) {
     if (type === "drinks") {
       return (
         <div className="Menu__Container">
-          <div className="Menu__Title"></div>
           <img
             className="menuimage"
             alt=""
@@ -23,7 +22,17 @@ export default function ItemBuilder(props) {
         </div>
       );
     }
-
+    if (type === "food") {
+      return (
+        <div className="Menu__Container">
+          <img
+            className="menuimage"
+            alt=""
+            src="https://www.christchurchdunstable.org.uk/theway/images/min/food-min.jpg"
+          ></img>
+        </div>
+      );
+    }
     if (type === "cakes") {
       for (var i = 0; i < menu.length; i++) {
         if (type === menu[i].type && menu[i].forSale === true) {
@@ -35,6 +44,22 @@ export default function ItemBuilder(props) {
               desc={menu[i].desc}
               image={menu[i].image}
               allegens={menu[i].allegens}
+            />
+          );
+        }
+      }
+    }
+    if (type === "specials") {
+      for (var j = 0; i < menu.length; j++) {
+        if (type === menu[j].type && menu[j].forSale === true) {
+          rows.push(
+            <Product
+              key={menu[j].name}
+              name={menu[j].name}
+              price={menu[j].price}
+              desc={menu[j].desc}
+              image={menu[j].image}
+              allegens={menu[j].allegens}
             />
           );
         }
