@@ -109,6 +109,7 @@ export default function PersistentDrawerLeft() {
   const [menuData, setMenuData] = useState("loading");
 
   useEffect(() => {
+    document.title = "Menu - The Way Coffee House - Dunstable";
     async function fetchData() {
       const request = await axios.get(
         "https://www.christchurchdunstable.org.uk/theway/json/menu.json"
@@ -156,7 +157,6 @@ export default function PersistentDrawerLeft() {
 
   return (
     <div className="menu">
-      {(document.title = "Menu - The Way Coffee House - Dunstable")}
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
