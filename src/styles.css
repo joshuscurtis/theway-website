@@ -53,9 +53,9 @@
 
 @media only screen and (max-width: 500px) {
   .bg_1 {
-    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/snow-outside-min.jpg");
+    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/snow-outside-min-mob.jpg");
     height: 100vh;
-    background-size: 300%;
+    background-size: 100%;
     background-position: 50%;
   }
   .bg_2 {
