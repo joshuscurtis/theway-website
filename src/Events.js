@@ -27,6 +27,14 @@ export default function Pane() {
             <h1 className="Events__Title">OUR EVENTS</h1>
             <div className="title__right"></div>
           </div>
+          <div className="Events__intro__alert">
+            <Box
+              title=""
+              content={
+                "Due to Covid-19 restrictions, our events are not running as normal. For more information on any of these activities please call 01582 661621."
+              }
+            />{" "}
+          </div>
           <div className="Events__intro">
             <Box title="" content={events} />{" "}
           </div>
