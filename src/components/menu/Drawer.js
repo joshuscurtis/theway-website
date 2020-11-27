@@ -156,6 +156,7 @@ export default function PersistentDrawerLeft() {
 
   return (
     <div className="menu">
+      {(document.title = "Menu - The Way Coffee House - Dunstable")}
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
