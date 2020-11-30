@@ -112,9 +112,13 @@ export default function PersistentDrawerLeft() {
     document.title = "Menu - The Way Coffee House - Dunstable";
     async function fetchData() {
       const request = await axios.get(
-        "https://www.christchurchdunstable.org.uk/theway/json/menu.json"
+        "https://cors-anywhere.herokuapp.com/https://www.christchurchdunstable.org.uk/theway/json/menu.json"
       );
-      console.log(request.data);
+      // const request2 = await axios.get(
+      //   "https://cors-anywhere.herokuapp.com/https://christchurchdunstable.org.uk/wp-json/wp/v2/posts/?filter%5Bp%5D=7912"
+      // );
+      // console.log(request2.data);
+
       setMenuData(request.data.items);
       return request;
     }
