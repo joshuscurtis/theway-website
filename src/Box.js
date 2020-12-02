@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 
 import Feed from "react-instagram-authless-feed";
 import { SocialIcon } from "react-social-icons";
-
+import axios from "axios";
 import "./Box.css";
 
 export function Box(props) {
@@ -35,23 +35,59 @@ export function Insta(props) {
 }
 
 export function News(props) {
-  return (
-    <div className="Box__Container">
-      <div className="News">
-        <Typography className="Box__Title" variant="h5" component="h5">
-          {props.title}
-        </Typography>
-        <Typography className="content" variant="subtitle" component="p">
-          {props.content}
-        </Typography>
+  const [updateData, setUpdateData] = useState("loading");
+
+  useEffect(() => {
+    async function fetchData() {
+      const request2 = await axios.get(
+        "https://christchurchdunstable.org.uk/wp-json/wp/v2/posts/?filter%5Bp%5D=7912"
+      );
+      console.log(request2.data[0].content);
+      setUpdateData(
+        request2.data[0].content.rendered.replace(/<[^>]*>?/gm, "")
+      );
+      console.log(updateData);
+
+      return request2;
+    }
+    fetchData();
+  }, [updateData]);
+  if (updateData === "loading") {
+    return (
+      <div className="Box__Container">
+        <div className="News">
+          <Typography className="Box__Title" variant="h5" component="h5">
+            {props.title}
+          </Typography>
+          <Typography className="content" variant="subtitle" component="p">
+            {props.content}
+          </Typography>
+        </div>
+        <div className="Box__Socials">
+          <SocialIcon url="https://www.instagram.com/the_way_dunstable/" />
+          <SocialIcon url="https://www.facebook.com/thewaydunstable/" />
+          <SocialIcon url="http://youtube.com/" />
+        </div>
       </div>
-      <div className="Box__Socials">
-        <SocialIcon url="https://www.instagram.com/the_way_dunstable/" />
-        <SocialIcon url="https://www.facebook.com/thewaydunstable/" />
-        <SocialIcon url="http://youtube.com/" />
+    );
+  }
+  if (updateData !== "loading") {
+    return (
+      <div className="Box__Container">
+        <div className="News">
+          <Typography className="Box__Title" variant="h5" component="h5">
+            {props.title}
+          </Typography>
+          {updateData}
+        </div>
+        <div className="Box__Socials">
+          <SocialIcon url="https://www.instagram.com/the_way_dunstable/" />
+          <SocialIcon url="https://www.facebook.com/thewaydunstable/" />
+          <SocialIcon url="http://youtube.com/" />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export function OpeningTimes(props) {
