@@ -9,7 +9,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 export default function Pane() {
   // const aboutUs =
   //   "The Way Coffee House is our newly restored 18th century coffee house, situated on West Street and the ideal place to meet friends, relax on your own or pick up a drink to take away.  Our friendly team serve fresh brewed coffee to suit all styles. In addition to coffee we have quality teas, cold drinks, Zuma hot chocolate to satisfy any chocaholic, scrummy cakes and light refreshments";
-  const news = "Opening soon for takeaway drinks and cakes... ";
+  const news = "Now open soon for drinks, food and cakes... ";
 
   return (
     <div id="about">
