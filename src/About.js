@@ -111,11 +111,12 @@ export default function Pane() {
           </ScrollAnimation>
         </div>
 
-     //   <div className="About__row2">
-     //     <ScrollAnimation animateOnce={true} animateIn="fadeIn">
-     //       <Insta title="" />
-     //     </ScrollAnimation>
-      //  </div>
+{/*   <div className="About__row2">
+          <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+            <Insta title="" />
+          </ScrollAnimation>
+        </div>
+  */}
       </div>
     </div>
   );
