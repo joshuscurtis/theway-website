@@ -1,2 +1,2 @@
 # theway-website
-Created with CodeSandbox
+Made by Joshß
