@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import "animate.js";
-import { OpeningTimes, News, Insta } from "./Box";
+import { OpeningTimes, News } from "./Box";
 import Typewriter from "typewriter-effect";
 
 import ScrollAnimation from "react-animate-on-scroll";
