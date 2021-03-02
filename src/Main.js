@@ -16,7 +16,7 @@ export default function Panel() {
       </Carousel>
       <div className="Panel__Box">
         <img
-          alt="test"
+          alt="The Way Logo"
           src="https://www.christchurchdunstable.org.uk/theway/images/min/logo-min.jpg"
           className="logo"
         ></img>
