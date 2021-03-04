@@ -48,13 +48,13 @@ export default function Pane() {
           time="2nd Wednesday of the month – 7:30pm."
         />
         <EventCard
-          img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Patchwork-Quilting.jpg"
+          img="https://www.christchurchdunstable.org.uk/theway/images/min//Ministry-Posters-Patchwork-Quilting.webp"
           title="Patch Work & Quilting"
           text={patchwork}
           time="1 st &amp; 3 rd Monday of the month. 10am-12:30pm"
         />
         <EventCard
-          img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Art.jpg"
+          img="https://www.christchurchdunstable.org.uk/theway/images/min/Ministry-Posters-Art.webp"
           title="Art"
           text={art}
           time=" Tuesdays – 10am-12pm – During term time."
