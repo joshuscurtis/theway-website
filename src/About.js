@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import "animate.js";
-import { OpeningTimes, News } from "./Box";
+import { OpeningTimes, News, Insta } from "./Box";
 import Typewriter from "typewriter-effect";
 
 import ScrollAnimation from "react-animate-on-scroll";
@@ -111,12 +111,12 @@ export default function Pane() {
           </ScrollAnimation>
         </div>
 
-{/*   <div className="About__row2">
+          <div className="About__row2">
           <ScrollAnimation animateOnce={true} animateIn="fadeIn">
             <Insta title="" />
           </ScrollAnimation>
         </div>
-  */}
+   
       </div>
     </div>
   );
