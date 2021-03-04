@@ -23,21 +23,21 @@
   background-size: 170%;
 }
 .bg_2 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/coffeemachine-min.jpg");
+  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/coffeemachine-min.webp");
   height: 100vh;
   width: 100%;
   background-position: center;
   background-size: 150%;
 }
 .bg_3 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/cake-min.jpg");
+  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/cake-min.webp");
   height: 100vh;
   width: 100%;
   background-position: center;
   background-size: 150%;
 }
 .bg_4 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/coffee-min.jpg");
+  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/coffee-min.webp");
   height: 100vh;
   width: 100%;
   background-position: left;
