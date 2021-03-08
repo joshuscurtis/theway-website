@@ -1,7 +1,7 @@
 import React from "react";
 import "./Events.css";
 import EventCard from "./EventCard";
-import { Box } from "./Box";
+import {BoxWithFetch } from "./Box";
 //const eventData = require('./data/events.json');
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -16,30 +16,23 @@ export default function Pane() {
     "Knit & Natter is warm group full of fun, laughter, chatting, and occasionally some knitting gets done. This group is home to over 40 knitters and crochet-ers ranging from beginner to expert. We have various seasonal projects, as well as being able to knit many items given the local NICU ward at the L&D hospital. We now run two sessions. Join us on Fridays between 9:30am – 11am or 11:30am – 1pm; if possible, let us know which. Click here to find out more.";
   const wed =
     "Christ Church Dunstable has children’s activities on a Wednesday evening, so on Wednesday evening we keep the Coffee House open til 9pm. This is us opportunity to run various activities. On these evenings we run quizzes, puddings nights, music nights and more. All are welcome to come in and enjoy the excellent coffee and cakes that we have to offer. These activities are run in-line with current Covid guidance. More information can be found in the Way or by clicking here.";
-  const events =
-    "The Way has a thriving and diverse community of people from many different backgrounds, nationalities, and interests. Through the Way, we are able to run various groups and activities. Even though some of these are unable to restart due to the current coronavirus pandemic, we are pleased to be able to run some of the groups; either in person or online. In these groups, we can build relationships, improve our skills, have fun, and learn about the God that loves us. Each of our groups take time to have a thought for the week where we spend a few minutes thinking about deeper things and about God who has revealed himself through Jesus, His Son";
   return (
     <div className="Events__Container" id="events">
       <ScrollAnimation animateOnce={true} animateIn="fadeIn">
         <div className="Events__header">
           <div className="Events__Title__Container" id="events">
-            <div className="title__left"></div>
-            <h1 className="Events__Title">OUR EVENTS</h1>
-            <div className="title__right"></div>
-          </div>
+            <div className="title__left"> </div>{" "}
+            <h1 className="Events__Title"> OUR EVENTS </h1>{" "}
+            <div className="title__right"> </div>{" "}
+          </div>{" "}
           <div className="Events__intro__alert">
-            <Box
-              title=""
-              content={
-                "Due to Covid-19 restrictions, our events are not running as normal. For more information on any of these activities please call 01582 661621."
-              }
-            />{" "}
-          </div>
+            <BoxWithFetch url="https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8913" />{" "}
+          </div>{" "}
           <div className="Events__intro">
-            <Box title="" content={events} />{" "}
-          </div>
-        </div>
-      </ScrollAnimation>
+            <BoxWithFetch url="https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8910" />{" "}
+          </div>{" "}
+        </div>{" "}
+      </ScrollAnimation>{" "}
       <div className="Events__Main">
         <EventCard
           img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Book-Club.jpg"
@@ -71,7 +64,7 @@ export default function Pane() {
           text={wed}
           time="Wednesday evenings, til 9pm."
         />
-      </div>
+      </div>{" "}
     </div>
   );
 }

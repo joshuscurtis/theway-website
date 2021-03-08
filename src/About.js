@@ -107,7 +107,7 @@ export default function Pane() {
             duration={1}
             animateIn="slideInRight"
           >
-            <News title="Latest Updates" content={news} />
+            <News url="https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=7912" title="Latest Updates" content={news} />
           </ScrollAnimation>
         </div>
 

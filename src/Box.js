@@ -40,7 +40,7 @@ export function News(props) {
   useEffect(() => {
     async function fetchData() {
       const request2 = await axios.get(
-        "https://christchurchdunstable.org.uk/wp-json/wp/v2/posts/?filter%5Bp%5D=7912"
+        props.url
       );
       console.log(request2.data[0].content);
       setUpdateData(
@@ -51,7 +51,7 @@ export function News(props) {
       return request2;
     }
     fetchData();
-  }, [updateData]);
+  }, [updateData, props.url]);
   if (updateData === "loading") {
     return (
       <div className="Box__Container">
@@ -89,6 +89,53 @@ export function News(props) {
     );
   }
 }
+
+export function BoxWithFetch(props) {
+  const [updateData, setUpdateData] = useState("loading");
+
+  useEffect(() => {
+    async function fetchData() {
+      const request2 = await axios.get(
+        props.url
+      );
+      console.log(request2.data[0].content);
+      setUpdateData(
+        request2.data[0].content.rendered.replace(/<[^>]*>?/gm, "")
+      );
+      console.log(updateData);
+
+      return request2;
+    }
+    fetchData();
+  }, [updateData, props.url]);
+  if (updateData === "loading") {
+    return (
+      <div className="Box__Container Fetch">
+        <div className="News">
+          <Typography className="Box__Title" variant="h5" component="h5">
+            {props.title}
+          </Typography>
+          <Typography className="content" variant="subtitle" component="p">
+            {props.content}
+          </Typography>
+        </div>
+      </div>
+    );
+  }
+  if (updateData !== "loading") {
+    return (
+      <div className="Box__Container">
+      <CardContent>
+        <Typography variant="body2" component="p">
+          {updateData}
+        </Typography>
+      </CardContent>
+      <CardActions></CardActions>
+    </div>
+    );
+  }
+}
+
 
 export function OpeningTimes(props) {
   return (
