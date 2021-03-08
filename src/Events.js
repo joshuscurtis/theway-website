@@ -1,7 +1,7 @@
 import React from "react";
 import "./Events.css";
 import EventCard from "./EventCard";
-import {BoxWithFetch } from "./Box";
+import { BoxWithFetch } from "./Box";
 //const eventData = require('./data/events.json');
 import ScrollAnimation from "react-animate-on-scroll";
 

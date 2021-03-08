@@ -39,9 +39,7 @@ export function News(props) {
 
   useEffect(() => {
     async function fetchData() {
-      const request2 = await axios.get(
-        props.url
-      );
+      const request2 = await axios.get(props.url);
       console.log(request2.data[0].content);
       setUpdateData(
         request2.data[0].content.rendered.replace(/<[^>]*>?/gm, "")
@@ -95,9 +93,7 @@ export function BoxWithFetch(props) {
 
   useEffect(() => {
     async function fetchData() {
-      const request2 = await axios.get(
-        props.url
-      );
+      const request2 = await axios.get(props.url);
       console.log(request2.data[0].content);
       setUpdateData(
         request2.data[0].content.rendered.replace(/<[^>]*>?/gm, "")
@@ -125,17 +121,16 @@ export function BoxWithFetch(props) {
   if (updateData !== "loading") {
     return (
       <div className="Box__Container">
-      <CardContent>
-        <Typography variant="body2" component="p">
-          {updateData}
-        </Typography>
-      </CardContent>
-      <CardActions></CardActions>
-    </div>
+        <CardContent>
+          <Typography variant="body2" component="p">
+            {updateData}
+          </Typography>
+        </CardContent>
+        <CardActions></CardActions>
+      </div>
     );
   }
 }
-
 
 export function OpeningTimes(props) {
   return (

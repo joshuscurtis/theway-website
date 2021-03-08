@@ -109,7 +109,7 @@ export default function PersistentDrawerLeft() {
   const [menuData, setMenuData] = useState("loading");
 
   useEffect(() => {
-    document.title = "Menu - The Way Coffee House - Dunstable";
+    document.title = "Menu | The Way Coffee House | Coffee & Cake Dunstable";
     async function fetchData() {
       const request = await axios.get(
         "https://christchurchdunstable.org.uk/theway/json/menu.json"
