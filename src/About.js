@@ -93,12 +93,12 @@ export default function Pane() {
           >
             <OpeningTimes
               title="Opening Times"
-              mon="9:00am - 3:00pm"
-              tue="9:00am - 3:00pm"
-              wed="9:00am - 3:00pm"
-              thu="9:00am - 3:00pm"
-              fri="9:00am - 3:00pm"
-              sat="9:00am - 3:00pm"
+              mon="8:30am - 3:00pm"
+              tue="8:30am - 3:00pm"
+              wed="8:30am - 3:00pm"
+              thu="8:30am - 3:00pm"
+              fri="8:30am - 3:00pm"
+              sat="8:30am - 3:00pm"
               sun="CLOSED"
             />
           </ScrollAnimation>
