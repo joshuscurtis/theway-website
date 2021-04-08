@@ -7,34 +7,13 @@ import Typewriter from "typewriter-effect";
 import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Pane() {
-  // const aboutUs =
-  //   "The Way Coffee House is our newly restored 18th century coffee house, situated on West Street and the ideal place to meet friends, relax on your own or pick up a drink to take away.  Our friendly team serve fresh brewed coffee to suit all styles. In addition to coffee we have quality teas, cold drinks, Zuma hot chocolate to satisfy any chocaholic, scrummy cakes and light refreshments";
   const news = "Opening soon for takeaway drinks and cakes... ";
-
   return (
     <div id="about">
       <div className="People__Title__Container">
         {/* <h1 className="People__Title">ABOUT US</h1> */}
       </div>
       <div className="About__Main">
-        {/* <ScrollAnimation animateOnce={true} duration={1} animateIn="fadeIn">
-          <div className="About__Slide">
-            <Carousel autoplay autoplayInterval={3000}>
-              <img
-                alt=""
-                src="http://www.christchurchdunstable.org.uk/theway/images/raw/DSC02119.JPG"
-              />
-              <img
-                alt=""
-                src="http://www.christchurchdunstable.org.uk/theway/images/raw/DSC00689.JPG"
-              />
-              <img
-                alt=""
-                src="http://www.christchurchdunstable.org.uk/theway/images/raw/DSC00420.JPG"
-              />
-            </Carousel>
-          </div>
-        </ScrollAnimation> */}
         <div className="About__row2">
           <div className="exc">
             <Typewriter
@@ -93,12 +72,12 @@ export default function Pane() {
           >
             <OpeningTimes
               title="Opening Times"
-              mon="8:30am - 3:00pm"
-              tue="8:30am - 3:00pm"
-              wed="8:30am - 3:00pm"
-              thu="8:30am - 3:00pm"
-              fri="8:30am - 3:00pm"
-              sat="8:30am - 3:00pm"
+              mon="8:30am - 1:00pm"
+              tue="8:30am - 1:00pm"
+              wed="8:30am - 1:00pm"
+              thu="8:30am - 1:00pm"
+              fri="8:30am - 1:00pm"
+              sat="8:30am - 1:00pm"
               sun="CLOSED"
             />
           </ScrollAnimation>
