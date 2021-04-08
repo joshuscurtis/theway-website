@@ -92,9 +92,7 @@ export default function Pane() {
 
           <div className="About__row2">
           <ScrollAnimation animateOnce={true} animateIn="fadeIn">
-          <ErrorBoundary>
             {/*<Insta title="" />*/}
-            </ErrorBoundary>
           </ScrollAnimation>
         </div>
    
